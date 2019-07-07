@@ -1,0 +1,914 @@
+{
+	"stocks": [
+		{
+			"name": "WIELTON",
+			"ticker": "WLT",
+			"data_debiutu": "07-02-2008",
+			"cena_debiutu": "5.99",
+			"2019": {
+				"incomes": "",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.33",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+
+				}
+			},
+			"2018": {
+				"incomes": "2068313",
+				"net_profit": "69369",
+				"operative_profit": "96082",
+				"liczba_akcji": "60375",
+				"zadluzenie": "1160487",
+				"należnosci": "",
+				"acc_value": "",
+				"dividend": "0.25",
+				"koszty_zarzadu": "",
+				"events": [
+					"w listopadzie miał miejsce pożar na Wydziale Lakierni KTL w Wieluniu, mienie jest objęte ubezpieczniem, jednak straty z tego tytułu wycenione sa na 40 mln zł",
+					"budowa centrum badawczego ze środków NCBiR "
+				],
+				"zarzad": ["Marcin Golec", ""],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.74",
+					"feb": "12.20",
+					"mar": "12.40",
+					"apr": "13.78",
+					"may": "12.28",
+					"jun": "13.62",
+					"jul": "12.20",
+					"aug": "11.80",
+					"sep": "10.60",
+					"oct": "9.75",
+					"nov": "9.34",
+					"dec": "9.88"
+
+				}
+			},
+			"2017": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+
+				}
+			},
+			"2016": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+
+				}
+			},
+			"2015": {
+				"incomes": "630276",
+				"net_profit": "33946",
+				"operative_profit": "44608",
+				"liczba_akcji": "60375",
+				"zadluzenie": "272700",
+				"należnosci": "",
+				"zobowiazania": "",
+				"acc_value": "3.59",
+				"dividend": "0.24",
+				"koszty_zarzadu": "25342",
+				"events": ["Rynek rosyjski pozostaje pod wpływem sytuacji politycznej: Grupa Wielton zakończyła 2015 r. sprzedażą narynku rosyjskim w liczbie 489 sztuk, tj .61 .6 % spadku rdr.",
+					"Rynek włoski pokazał najszybszy wzrost w Europie Zachodniej o 79,2% rdr.",
+					"W obszarze inwestycji, w lutym br. uruchomiono Centrum Badawczo-Rozwojowe Wielton."
+				],
+				"zarzad": ["Mariusz Golec", "Włodzimierz Masłowski", "Tomasz Śniatała", "Thomas Hajek"],
+				"akcjonariat": {
+					"MP Inwestors SCSp": "37.63%",
+					"VESTA FIZ Aktywów Niepublcznych": "13.17%",
+					"Łukasz Tylkowsk": "10.77%",
+					"MPSZ Sp. z o.o.": "13.35",
+					"Aviva Investors Poland": "6.54%",
+					"Pozostali": "18.56%"
+				},
+				"cena": {
+					"jan": "4.15",
+					"feb": "4.92",
+					"mar": "5.08",
+					"apr": "5.20",
+					"may": "6.85",
+					"jun": "6.47",
+					"jul": "7.14",
+					"aug": "7.96",
+					"sep": "7.25",
+					"oct": "7.56",
+					"nov": "7.06",
+					"dec": "7.18"
+
+				}
+			},
+			"2014": {
+				"incomes": "584207",
+				"net_profit": "24477",
+				"operative_profit": "26496",
+				"liczba_akcji": "60375",
+				"zadluzenie": "200448",
+				"należnosci": "",
+				"zobowiazania": "",
+				"acc_value": "3.21",
+				"dividend": "0.29",
+				"koszty_zarzadu": "24360",
+				"events": [
+					"w roku obrotowym 2014 zysk operacyjny wyniósł 26,5 mln zł, co stanowi spadek o 25,1% w porównaniu z rokiem 2013. Emitent tłumaczy to częściowo zmianami na wschodzie ",
+					"emitent liczy, że w najbliższym czasie sfinalizuje przejęcie francuskiej spółki Fruehauf, która ma być środkiem w ekspansji na rynki Europy Zachodniej, w tym kraje Beneluksu.",
+					"Spółka Wielton rozpoczęła także sprzedaż na rynek włoski pod logo trzech tamtejszych marek: Merker, VIBERTI i CARDI.Produkty sprzedawane we Włoszech dopasowane są do tamtejszego rynku, produkowane w Polsce i wysyłane w częściach do montażu."
+				],
+				"zarzad": ["Jarosław Szczepek", "Mariusz Golec", "Tomasz Śniatała", "Thomas Hajek"],
+				"akcjonariat": {
+					"MP Inwestors FIZ": "37.63%",
+					"Copernicus TFI S.A.": "13.17%",
+					"Łukasz Tylkowski": "10.77%",
+					"Mariusz Szataniak": "6.67%",
+					"Paweł Szataniak": "6.67%",
+					"Aviva Investors Poland": "6.49%",
+					"Pozostali": "18.60%"
+				},
+				"cena": {
+					"jan": "6.83",
+					"feb": "6.20",
+					"mar": "5.10",
+					"apr": "4.80",
+					"may": "5.12",
+					"jun": "5.20",
+					"jul": "6.10",
+					"aug": "6.24",
+					"sep": "5.79",
+					"oct": "5.40",
+					"nov": "4.42",
+					"dec": "3.66"
+				}
+			},
+			"2013": {
+				"incomes": "588101",
+				"net_profit": "25786",
+				"operative_profit": "35351",
+				"liczba_akcji": "60375",
+				"zadluzenie": "200771",
+				"należnosci": "",
+				"zobowiazania": "",
+				"acc_value": "2.89",
+				"dividend": "0.24",
+				"koszty_zarzadu": "19657",
+				"events": [
+					"rozpoczęto działania w ramach projektu obejmującego utworzenie Centrum Badawczo– Rozwojowego w zakresie innowacyjnych środków transportu.Szacowane nakłady na realizację projektu w całym okresie, który będzie objęty harmonogramem inwestycji wyniosą 25.8 mln zł brutto ",
+					"w związku z nadzwyczajnymi zdarzeniami na Ukrainie i w Rosji istnieje ryzyko w obrotach handlowych na rynkach rosyjskim i ukraińskim i wiąże się w głównej mierze z deprecjacją rubla i hrywny "
+				],
+				"zarzad": ["Jarosław Szczepek", "Włodzimierz Masłowski", "Mariusz Golec", "Tomasz Śniatała"],
+				"akcjonariat": {
+					"IPOPEMA I FIZAN": "38.62%",
+					"Jakub Prozner": "14.01%",
+					"Łukasz Tylkowski": "10.77%",
+					"Mariusz Szataniak": "6.7%",
+					"Paweł Szataniak": "6.7%",
+					"Aviva Investors Poland": "5.25%",
+					"Pozostali": "18.00%"
+				},
+				"cena": {
+					"jan": "3.65",
+					"feb": "3.45",
+					"mar": "3.07",
+					"apr": "3.20",
+					"may": "3.50",
+					"jun": "3.77",
+					"jul": "4.34",
+					"aug": "4.50",
+					"sep": "5.40",
+					"oct": "6.43",
+					"nov": "6.12",
+					"dec": "6.00"
+
+				}
+			},
+			"2012": {
+				"incomes": "605238",
+				"net_profit": "22885",
+				"operative_profit": "29040",
+				"liczba_akcji": "60375",
+				"zadluzenie": "215825",
+				"należnosci": "",
+				"zobowiazania": "",
+				"acc_value": "2.70",
+				"dividend": "0.20",
+				"koszty_zarzadu": "18176",
+				"events": [
+					"spółka zależna Wielton Ukraina rozwija działalność, natomiast w roku 2012 ustanowiona została spółka zależna na Białorusi",
+					"nowy produkty: nowa skonstruowaną przez inżynierów zakładu aluminiowa naczepa-chłodnia, nowa naczepa kurtynowa, nowa wywrotka aluminiowa oraz przyczepy rolnicze dedykowane dla segmentu AGRO ",
+					"zgodnie z komunikatami zwiekszano linie kredytową z bankiem PKO BP S.A."
+				],
+				"zarzad": ["Jarosław Szczepek", "Włodzimierz Masłowski", "Mariusz Golec", "Tomasz Śniatała"],
+				"akcjonariat": {
+					"IPOPEMA I FIZAN": "37.62%",
+					"Jakub Prozner": "16.01%",
+					"Łukasz Tylkowski": "10.77%",
+					"Mariusz Szataniak": "6.7%",
+					"Paweł Szataniak": "6.7%",
+					"ING TFI S.A": "5.25%",
+					"Pozostali": "17.00%"
+				},
+				"cena": {
+					"jan": "2.26",
+					"feb": "2.70",
+					"mar": "2.59",
+					"apr": "2.47",
+					"may": "2.18",
+					"jun": "2.49",
+					"jul": "2.36",
+					"aug": "2.45",
+					"sep": "2.39",
+					"oct": "3.79",
+					"nov": "3.69",
+					"dec": "3.73"
+
+				}
+			},
+			"2011": {
+				"incomes": "496045",
+				"net_profit": "10368",
+				"operative_profit": "18721",
+				"liczba_akcji": "60375",
+				"zadluzenie": "229038",
+				"należnosci": "",
+				"zobowiazania": "",
+				"acc_value": "2.52",
+				"dividend": "0",
+				"koszty_zarzadu": "13154",
+				"events": [
+					"ukierunkowanie sprzedaży na rynki Europy Wschodniej, w szczególności do Rosji, która stała się najważniejszym rynkiem dla Wieltonu.W IV kwartale sprzedaż za granicą odpowiadała za blisko 70 % przychodów spółki ",
+					"rozwój współpracy i kooperacja kontraktowa z największymi producentami samochodów ciężarowych takimi jak: Scania, Volvo, Man "
+				],
+				"zarzad": ["Jarosław Szczepek", "Włodzimierz Masłowski", "Mariusz Golec", "Tomasz Śniatała"],
+				"akcjonariat": {
+					"IPOPEMA I FIZAN": "37.62%",
+					"Jakub Prozner": "16.01%",
+					"Łukasz Tylkowski": "10.77%",
+					"Mariusz Szataniak": "6.7%",
+					"Paweł Szataniak": "6.7%",
+					"ING TFI S.A": "5.25%",
+					"Pozostali": "17.00%"
+				},
+				"cena": {
+					"jan": "3.65",
+					"feb": "3.61",
+					"mar": "3.69",
+					"apr": "4.25",
+					"may": "3.10",
+					"jun": "2.91",
+					"jul": "2.52",
+					"aug": "1.99",
+					"sep": "1.37",
+					"oct": "1.96",
+					"nov": "1.70",
+					"dec": "1.82"
+
+				}
+			},
+			"2010": {
+				"incomes": "261793",
+				"net_profit": "-8804",
+				"operative_profit": "-5429",
+				"liczba_akcji": "60375",
+				"zadluzenie": "176881",
+				"należnosci": "",
+				"zobowiazania": "",
+				"acc_value": "2.36",
+				"dividend": "0",
+				"koszty_zarzadu": "12537",
+				"events": [
+					"rozwój działalności handlowej spółek zależnych: Wielton Rosja i Wielton Ukraina prowadzących działalność dystrybucyjną",
+					"prowadzenie przez spółkę działalności gospodarczej na terenie Łódzkiej Specjalnej Strefy Ekonomicznej, z czym łączą się przywileje(podatkowe lub możliwość korzystania z pomocy publicznej), ale także wymogi spełnienia kryteriów ",
+					"spółka przewiduje rozstrzygnięcie decyzji dotyczącej kooperacji bądź budowy zakładu produkcyjnego lub montowni pojazdów na terenie Rosji "
+				],
+				"zarzad": ["Jarosław Szczepek", "Włodzimierz Masłowski", "Mariusz Golec", "Paweł Gońda"],
+				"akcjonariat": {
+					"IPOPEMA I FIZAN": "37.62%",
+					"Jakub Prozner": "16.01%",
+					"Łukasz Tylkowski": "10.77%",
+					"Mariusz Szataniak": "6.7%",
+					"Paweł Szataniak": "6.7%",
+					"ING TFI S.A": "5.25%",
+					"Pozostali": "17.00%"
+				},
+				"cena": {
+					"jan": "3.21",
+					"feb": "3.09",
+					"mar": "3.73",
+					"apr": "3.74",
+					"may": "3.44",
+					"jun": "3.45",
+					"jul": "3.35",
+					"aug": "3.39",
+					"sep": "3.28",
+					"oct": "3.25",
+					"nov": "3.61",
+					"dec": "3.94"
+
+				}
+			},
+			"2009": {
+				"incomes": "162833",
+				"net_profit": "-9900",
+				"operative_profit": "-10156",
+				"liczba_akcji": "60375",
+				"zadluzenie": "135235",
+				"należnosci": "",
+				"zobowiazania": "",
+				"acc_value": "2.50",
+				"dividend": "0.24",
+				"koszty_zarzadu": "9095",
+				"events": [
+					"Wielton wchodzi na rynek naszep rolniczych i promuje swój nowy brand Wielton AGRO, stworzył 35 punktów dilerskich",
+					"Po trudnym dla branży 2008 roku wstrzymano inwestycje w zakład produkcyjny nr 2",
+					"Program 'Wielton Finance' działa w systemie wspomagania zakupu naczep przez klienta, działa także pakiet assistance dla naczep sprzedawanych w systemie wielton service"
+				],
+				"zarzad": ["Włodzimierz Masłowski", "Mariusz Golec", "Paweł Gońda"],
+				"akcjonariat": {
+					"IPOPEMA I FIZAN": "40.4%",
+					"Jakub Prozner": "16.0%",
+					"Łukasz Tylkowski": "12.7%",
+					"Mariusz Szataniak": "6.7%",
+					"Paweł Szataniak": "6.7%",
+					"Pozostali": "17.5%"
+				},
+				"cena": {
+					"jan": "1.49",
+					"feb": "1.41",
+					"mar": "1.61",
+					"apr": "1.67",
+					"may": "1.66",
+					"jun": "2.81",
+					"jul": "3.05",
+					"aug": "3.97",
+					"sep": "4.01",
+					"oct": "3.81",
+					"nov": "3.31",
+					"dec": "3.30"
+
+				}
+			},
+			"2008": {
+				"incomes": "368435",
+				"net_profit": "36176",
+				"operative_profit": "53589",
+				"liczba_akcji": "60375",
+				"zadluzenie": "145938",
+				"należnosci": "",
+				"zobowiazania": "",
+				"acc_value": "2.90",
+				"dividend": "0.22",
+				"koszty_zarzadu": "8822",
+				"events": [
+					"Wielton obiera kierunek na wschód, we wrześniu 2008 nastąpiło zarejestrowanie spółki Wielton Vostok Sp. z o.o. - celem spółki jest zwiekszanie sprzedaży w Rosji oraz zapewnienie serwisu",
+					"Z uwagi na trudny rok w branży zredukowano zatrudnienie o 25%, dalsze działania restrukturyzacyjne będą miały na celu zwiekszyć udział sprzedaży i rozwijać inne segmenty"
+				],
+				"zarzad": ["Włodzimierz Masłowski", "Mariusz Golec", "Paweł Gońda"],
+				"akcjonariat": {
+					"IPOPEMA I FIZAN": "41.4%",
+					"Jakub Prozner": "16.0%",
+					"Łukasz Tylkowski": "12.7%",
+					"Mariusz Szataniak": "6.7%",
+					"Paweł Szataniak": "6.7%",
+					"Pozostali": "16.5%"
+				},
+				"cena": {
+					"jan": "6.07",
+					"feb": "7.67",
+					"mar": "7.21",
+					"apr": "6.92",
+					"may": "6.62",
+					"jun": "5.77",
+					"jul": "4.64",
+					"aug": "5.28",
+					"sep": "4.59",
+					"oct": "2.49",
+					"nov": "1.99",
+					"dec": "1.79"
+				}
+			}
+		},
+		{
+			"name": "FERRO",
+			"ticker": "FRO",
+			"data_debiutu": "02-2008",
+			"cena_debiutu": "5",
+			"2019": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			},
+			"2018": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			},
+			"2017": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			},
+			"2016": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			},
+			"2015": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			},
+			"2014": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			},
+			"2013": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			},
+			"2012": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			},
+			"2011": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			},
+			"2010": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			},
+			"2009": {
+				"incomes": "1000000",
+				"net_profit": "200",
+				"operative_profit": "20",
+				"liczba_akcji": "250000",
+				"zadluzenie": "20000",
+				"należnosci": "2000",
+				"zobowiazania": "40000",
+				"acc_value": "200000",
+				"dividend": "0.25",
+				"koszty_zarzadu": "40000",
+				"events": [
+					"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+					"połączenie ze spółką brytyjską",
+					"budowa centrum badawczego ze środków NCBiR"
+				],
+				"zarzad": ["Marcin Golec", "Ktos tam", "Ktos Tam"],
+				"akcjonariat": {
+					"Szamburski": "25%"
+				},
+				"cena": {
+					"jan": "12.7",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "",
+					"jun": "",
+					"jul": "",
+					"aug": "",
+					"sep": "",
+					"oct": "",
+					"nov": "",
+					"dec": ""
+				}
+			}
+		},
+		{
+			"name": "TEN SQUARE GAMES",
+			"ticker": "TEN",
+			"data_debiutu": "11-05-2018",
+			"cena_debiutu": "62.00",
+			"2018": {
+				"incomes": "115258",
+				"net_profit": "36468",
+				"operative_profit": "44315",
+				"liczba_akcji": "7275",
+				"zadluzenie": "",
+				"należnosci": "",
+				"zobowiazania": "",
+				"acc_value": "5.785",
+				"dividend": "",
+				"koszty_zarzadu": "",
+				"events": [
+					"Ten Square Games, producent i wydawca gier mobilnych oraz przeglądarkowych, zadebiutuje na GPW w piątek, 11 maja - poinformowała spółka w komunikacie.",
+					"Kurs akcji Ten Square Games wzrósł w debiucie o 13,5 proc",
+					"Ten Square Games rozpoczął produkcję dwóch gier na '19; podtrzymuje plany na rynku chińskim"
+				],
+				"zarzad": ["Maciej Popowicz", "Arkadiusz Pernal"],
+				"akcjonariat": {
+					"Maciej Popowicz": "39.21%",
+					"Arkadiusz Pernal": "18.76%",
+					"NN OFE": "7.55%",
+					"Pozostali": "34.47"
+				},
+				"cena": {
+					"jan": "",
+					"feb": "",
+					"mar": "",
+					"apr": "",
+					"may": "67.34",
+					"jun": "76.76",
+					"jul": "102.58",
+					"aug": "101.30",
+					"sep": "92.50",
+					"oct": "75.40",
+					"nov": "88.40",
+					"dec": "80.00"
+				}
+			}
+		}
+	]
+}
