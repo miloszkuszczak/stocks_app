@@ -10,11 +10,46 @@ import {
 } from 'react-router-dom';
 
 
+class Cites extends Component {
 
-class App extends Component {
   render() {
-    return ( <>
-<div class="container">
+    const cites = ['"Kupuj kiedy leje się krew"', '"Hossa wspina sie po ścianie strachu"', '"Bój się kiedy inni sa chytrzy"', '"Trend is your friend"'];
+  
+  return <h1>{cites[Math.floor(Math.random()*cites.length)]}</h1>
+  }
+}
+
+class StockSearch extends Component {
+  constructor(props) {
+    super(props);
+      this.state ={
+      stock: '',
+      changeSite: false,
+    }
+  }
+  handleChange(e) {
+    this.setState({
+        [e.target.name]: e.target.value
+})
+}
+  handleEnter(e) {
+    if (e.keyCode == 13) {
+        this.setState({
+          changeSite: true,
+        })
+    }
+  }
+
+
+  render() {
+    return <input type='text' name="stock" value={this.state.stock} onChange={e=>this.handleChange(e)} onKeyDown={e=>this.handleEnter(e)}/>
+    };
+}
+
+class Main extends Component {
+  render() {
+    return (<>
+            <div class="container">
    <div class="row">
         <div class="col-xs-12">
            <header>To będzie info o stronie/wybranej spółce     || Kurs Dnia    || Inne informacje</header>
@@ -43,7 +78,28 @@ class App extends Component {
     </div>
 
    </div>
-              </>)
+              </>
+
+    )
+  }
+}
+
+class FirstView extends Component {
+  render() {
+    return (<>
+      <Cites/>
+      <StockSearch/>
+    </>)
+
+  }
+}
+
+class App extends Component {
+  
+  
+  render() {
+    return ( <FirstView />
+    )
   }
 }
 
