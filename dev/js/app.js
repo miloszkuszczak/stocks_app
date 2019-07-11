@@ -1,5 +1,6 @@
 
 import React, {Component} from "react";
+import Select from 'react-select';
 import ReactDOM from "react-dom";
 import {
     HashRouter,
@@ -8,6 +9,8 @@ import {
     Switch,
     NavLink,
 } from 'react-router-dom';
+import Stockdata from '../stocks.json'
+import { Chart } from "react-charts";
 
 
 class Cites extends Component {
@@ -17,14 +20,75 @@ class Cites extends Component {
   }
   render() {
     const citeNo = this.props.citeNo
-
+    const aaa = [
+      {author: "Warren Buffet", cites: ["aaa","bbb"]},
+      {author: "", cites: []}]
     const cites = ['"Kupuj kiedy leje się krew"', '"Hossa wspina sie po ścianie strachu"', '"Bój się kiedy inni sa chytrzy"', '"Trend is your friend"'];
-  
   return (<>
           <h1>{cites[citeNo]}</h1>
           </>
   )}
 }
+
+
+class Dividends extends Component {
+ 
+}
+
+class Graph extends Component {
+    constructor(props) {
+    super(props);
+    }
+    render() {
+      debugger;
+          const chartData = this.props.data.map(x=> [x.month, x.value]);
+          const lineChart = (
+
+          <div
+            style={{
+              width: "100%",
+              height: "100%"
+            }}
+          >
+            <Chart
+              data={[
+                {
+                  label: "Series 1",
+                  data: chartData
+                },
+              ]}
+              axes={[
+                { primary: true, type: "linear", position: "bottom" },
+                { type: "linear", position: "left" }
+              ]}
+            />
+          </div>
+        );
+
+  return(<>
+          {lineChart}
+        </>
+    )}
+}
+
+class StockInfo extends Component {
+
+}
+
+class Financial extends Component {
+
+}
+
+class Equites extends Component {
+
+}
+
+class Reco extends Component {
+
+}
+
+
+
 
 class StockSearch extends Component {
   constructor(props) {
@@ -33,16 +97,18 @@ class StockSearch extends Component {
       stock: '',
     }
   }
+
   handleChange(e) {
     this.setState({
         [e.target.name]: e.target.value
-})
-}
+    })
+  }
+
   handleEnter(e) {
     if (e.keyCode == 13) {
         this.setState({
           changeSite: true,
-        })
+      })
     }
   }
 
@@ -50,42 +116,83 @@ class StockSearch extends Component {
   render() {
     return <input type='text' name="stock" value={this.state.stock} onChange={e=>this.handleChange(e)} onKeyDown={e=>this.handleEnter(e)}/>
     };
-}
+  }
+
 
 class Main extends Component {
+  constructor(props) {
+    super(props);
+    this.state={
+      stockCompany: this.props.stock,
+      stockData: this.props.stockData[0],
+      selectedYear: this.GetYearsToShow(this.props.stockData[0].years)[0],
+      yearsToShow: [],
+    }
+  }
+
+  GetYearsToShow(years){
+    const yearsToShow = years.map(item => {return item.year}).sort((a,b) => {a>b});
+    return yearsToShow;
+  }
+
+  componentDidMount() {
+    
+    let yearsToShow = this.GetYearsToShow(this.state.stockData.years);
+    let selectedYear = yearsToShow[0];
+    this.setState({yearsToShow,selectedYear});
+  }
+
+  handleClick(e) {
+    this.setState({
+       selectedYear: e.target.value,
+      
+      })
+  }
+
+
+
   render() {
-    return (<>
-            <div className="container">
-   <div className="row">
-        <div class="col-xs-12">
-           <header>To będzie info o stronie/wybranej spółce     || Kurs Dnia    || Inne informacje</header>
-        </div>
-        <div className="col-xs-3">
-            <div class="element">To jest element z ważnymi wydarzeniami w danym roku</div>
-        </div>
+    debugger;
+    const actualYearData = this.state.stockData.years.filter((elem) => {return elem.year == this.state.selectedYear});
+    const yearsFromStartToToday = this.state.stockData.years.filter((elem) => {return elem.year <= this.state.selectedYear});
 
-        <div className="col-xs-6">
-           <section class="element">Tu wykres (skorzystam z bilbiotek wykresu za dany rok)</section>
-         </div>
-         <div className="col-xs-3">
-               <div className="element"><div>Dywidendy</div></div>
+
+
+  // var divident = yearsFromStartToToday.map(x=>x.divident).reduce();
+
+    return (
+    <>
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-12">
+            <header>{this.state.stockCompany}</header>
+          </div>
+          <div className="col-xs-3">
+            <div className="element info"> {actualYearData[0].events.map((event, index) => <li key={index}>{event}</li>)} </div>
+          </div>
+          <div className="col-xs-6">
+               <section className="element">
+                <Graph data={actualYearData[0].cena} />
+               </section>
+          </div>
+          <div className="col-xs-3">
+                <div className="element"><div>Dywidenda {actualYearData[0].dividend} </div><div>Stopa dywidendy: {(actualYearData[0].dividend/actualYearData[0].cena.map(x=> x.value)[9])* 100 + '%'}
+                                              Suma dywidend od debiutu: {} Stopa zwrótu z samych dywidend od debiutu: {}</div></div>
+          </div>
+          <div className="col-xs-6">
+              <div className="element"><div>  <h1></h1></div></div>
+          </div>
+          <div className="col-xs-6">
+            <section className="element"> </section>
+          </div>
+          <div className="col-xs-12">
+            <footer><span className="line">
+              {this.state.yearsToShow.length > 0 ? this.state.yearsToShow.map(year => <button key={year} value={year} onClick={e=>this.handleClick(e)} className="circle">{year}</button>) : ""}
+            </span></footer>
+           </div>
+        </div>
       </div>
-      <div className="col-xs-6">
-          <div className="element"><div>Rekomendacje</div></div>
-        </div>
-        <div className="col-xs-6">
-            <section className="element">Dziennik inwestora [textarea=>local Storage</section>
-        </div>
-
-
-        <div className="col-xs-12">
-           <footer><span className="line"><div class="circle">2019</div></span></footer>
-       </div>
-    </div>
-
-   </div>
-              </>
-
+    </>
     )
   }
 }
@@ -112,6 +219,12 @@ class App extends Component {
     this.state={
       changeSite: false,
       citeNo: 0,
+      stockData: '',
+      selectedStockData: '',
+      selectedCompany: '',
+      stockNames: [],
+      clearable: true,
+      searchable:true,
     }
   }
 
@@ -119,35 +232,45 @@ componentDidMount() {
   this.setState({
     citeNo: getRandomIntInclusive(0,3),
   })
+    fetch(`https://api.myjson.com/bins/l9t8b`)
+        .then(res => res.json())
+        .then(data => {
+          let stockNames = data.stocks.map(x=>x.name);
+          this.setState({stockNames, 
+                         stockData: data});
+          });
 }
-  handleChange(e) {
-    this.setState({
-        [e.target.name]: e.target.value
-})
-}
-  handleEnter(e) {
-    if (e.keyCode == 13) {
-        this.setState({
-          changeSite: true,
-        })
-    }
-  }
-  
 
+  handleChange = selectedCompany => {
+    let selectedStockData = this.state.stockData.stocks.filter(x=>x.name === selectedCompany.value);
+    this.setState({ selectedCompany: selectedCompany.value, selectedStockData});
+  };
 
   render() {
-    if (this.state.changeSite == false) {
-    return ( <>
-              <Cites citeNo={this.state.citeNo}/>
-              <input type='text' name="stock" value={this.state.stock} onChange={e=>this.handleChange(e)} onKeyDown={e=>this.handleEnter(e)}/>
-            </>
-    )}
-    else {
-      return <Main/> 
+    if (!this.state.selectedCompany && !this.state.selectedStockData) {
+      let options = this.state.stockNames.map(function (stockName) {
+        return { value: stockName, label: stockName };
+      })
+        return ( <>
+                  <Cites citeNo={this.state.citeNo}/>
+                  <div>
+                    <Select
+                      name="companyNameSelector"
+                      value={this.state.selectedCompany.value}
+                      onChange={this.handleChange}
+                      clearable={this.state.clearable}
+                      searchable={this.state.searchable}
+                      options={options}                  
+                    />
+                  </div>
+                </>);
+            } else {
+      return <Main stock={this.state.selectedCompany} stockData={this.state.selectedStockData}/> 
     }
   }
-}
 
+
+}
 
 
 ReactDOM.render(<App/>, document.getElementById("app"))

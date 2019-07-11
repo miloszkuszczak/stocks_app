@@ -26,12 +26,19 @@
     "babel-loader": "^8.0.6",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^3.7.2",
+    "browser-sync": "^2.26.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
   },
   "dependencies": {
+    "gulp": "^4.0.0",
     "react": "^16.8.4",
+    "react-charts": "^2.0.0-alpha.12",
     "react-dom": "^16.8.4",
     "react-router-dom": "^5.0.1",
+    "react-select": "^3.0.4",
     "whatwg-fetch": "^3.0.0"
   }
 }
