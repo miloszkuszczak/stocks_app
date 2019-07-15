@@ -33,8 +33,10 @@
     "gulp-sourcemaps": "^2.6.4"
   },
   "dependencies": {
+    "chart.js": "^2.8.0",
     "gulp": "^4.0.0",
     "react": "^16.8.4",
+    "react-chartjs-2": "^2.7.6",
     "react-charts": "^2.0.0-alpha.12",
     "react-dom": "^16.8.4",
     "react-router-dom": "^5.0.1",

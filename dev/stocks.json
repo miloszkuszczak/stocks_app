@@ -1,1164 +1,1759 @@
 {
 	"stocks": [
-	  {
-		"id": 1,
-		"name": "WIELTON",
-		"ticker": "WLT",
-		"data_debiutu": "07-02-2008",
-		"cena_debiutu": "5.99",
-		"years": [
-		  {
-			"year": 2019,
-			"incomes": "340000",
-			"net_profit": "200",
-			"operative_profit": "20",
-			"liczba_akcji": "250000",
-			"zadluzenie": "20000",
-			"należnosci": "2000",
-			"zobowiazania": "40000",
-			"acc_value": "200000",
-			"dividend": "0.33",
-			"koszty_zarzadu": "40000",
-			"events": [
-			  "nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			  "połączenie ze spółką brytyjską",
-			  "budowa centrum badawczego ze środków NCBiR"
-			],
-			"zarzad": [
-			  "Marcin Golec",
-			  "Ktos tam",
-			  "Ktos Tam"
-			],
-			"akcjonariat": [
-			  {"holder": "Szamburski", "share": 25}
-			],
-			"cena": [
-			  {
-				"month": 1,
-				"value": 12.7
-			  },
-			  {
-				"month": 2,
-				"value": 14
-			  },
-			  {
-				"month": 3,
-				"value": 12
-			  },
-			  {
-				"month": 4,
-				"value": 15
-			  },
-			  {
-				"month": 5,
-				"value": 16
-			  },
-			  {
-				"month": 6,
-				"value": 17
-			  },
-			  {
-				"month": 7,
-				"value": 18
-			  },
-			  {
-				"month": 8,
-				"value": 20
-			  },
-			  {
-				"month": 9,
-				"value": 11
-			  },
-			  {
-				"month": 10,
-				"value": 12
-			  },
-			  {
-				"month": 11,
-				"value": 9
-			  },
-			  {
-				"month": 12,
-				"value": 8
-			  }
+		{
+			"id": 1,
+			"name": "WIELTON",
+			"ticker": "WLT",
+			"date_IPO": "07-02-2008",
+			"price_IPO": "5.99",
+			"years": [
+				{
+					"year": 2019,
+					"incomes": "",
+					"net_profit": "",
+					"operative_profit": "",
+					"equites": "",
+					"debts": "",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "",
+					"dividend": "0.33",
+					"cost_of_board": "",
+					"events": [],
+					"board": [
+						"Marcin Golec",
+						"Włodzimierz Masłowski",
+						"Tomasz Śnitała"
+					],
+					"shareholders": [
+						{
+							"holder": "MP Inwestors SCSp",
+							"share": 37.62
+						},
+						{
+							"holder": "MPSZ Sp. z o.o.",
+							"share": 13.35
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 9.72
+						},
+						{
+							"holder": "VESTA FIZ Aktywów Niepublcznych",
+							"share": 8.28
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 10.7
+						},
+						{
+							"month": 2,
+							"value": 12.80
+						},
+						{
+							"month": 3,
+							"value": 11.54
+						},
+						{
+							"month": 4,
+							"value": 10.72
+						},
+						{
+							"month": 5,
+							"value": 8.90
+						},
+						{
+							"month": 6,
+							"value": 9.00
+						},
+						{
+							"month": 7,
+							"value": null
+						},
+						{
+							"month": 8,
+							"value": null
+						},
+						{
+							"month": 9,
+							"value": null
+						},
+						{
+							"month": 10,
+							"value": null
+						},
+						{
+							"month": 11,
+							"value": null
+						},
+						{
+							"month": 12,
+							"value": null
+						}
+					]
+				},
+				{
+					"year": 2018,
+					"incomes": "2068313",
+					"net_profit": "69369",
+					"operative_profit": "96082",
+					"equites": "60375",
+					"debts": "1160487",
+					"dues": "",
+					"acc_value": "",
+					"dividend": "0.25",
+					"cost_of_board": "",
+					"events": [
+						"w listopadzie miał miejsce pożar na Wydziale Lakierni KTL w Wieluniu, mienie jest objęte ubezpieczniem, jednak straty z tego tytułu wycenione sa na 40 mln zł",
+						"budowa centrum badawczego ze środków NCBiR "
+					],
+					"board": [
+						"Marcin Golec",
+						"Włodzimierz Masłowski",
+						"Tomasz Śnitała"
+					],
+					"shareholders": [
+						{
+							"holder": "MP Inwestors SCSp",
+							"share": 37.62
+						},
+						{
+							"holder": "MPSZ Sp. z o.o.",
+							"share": 13.35
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 9.72
+						},
+						{
+							"holder": "VESTA FIZ Aktywów Niepublcznych",
+							"share": 8.28
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 12.74
+						},
+						{
+							"month": 2,
+							"value": 12.2
+						},
+						{
+							"month": 3,
+							"value": 12.4
+						},
+						{
+							"month": 4,
+							"value": 13.78
+						},
+						{
+							"month": 5,
+							"value": 12.28
+						},
+						{
+							"month": 6,
+							"value": 13.62
+						},
+						{
+							"month": 7,
+							"value": 12.2
+						},
+						{
+							"month": 8,
+							"value": 11.8
+						},
+						{
+							"month": 9,
+							"value": 10.6
+						},
+						{
+							"month": 10,
+							"value": 9.75
+						},
+						{
+							"month": 11,
+							"value": 9.34
+						},
+						{
+							"month": 12,
+							"value": 9.88
+						}
+					]
+				},
+				{
+					"year": 2017,
+					"incomes": "1597248",
+					"net_profit": "77323",
+					"operative_profit": "89037",
+					"equites": "60375",
+					"debts": "635365",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "5.18",
+					"dividend": "0.25",
+					"cost_of_board": "28000",
+					"events": [
+						"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+						"połączenie ze spółką brytyjską",
+						"budowa centrum badawczego ze środków NCBiR"
+					],
+					"board": [
+						"Marcin Golec",
+						"Włodzimierz Masłowski",
+						"Tomasz Śnitała"
+					],
+					"shareholders": [
+						{
+							"holder": "MP Inwestors SCSp",
+							"share": 37.62
+						},
+						{
+							"holder": "MPSZ Sp. z o.o.",
+							"share": 13.35
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 9.72
+						},
+						{
+							"holder": "VESTA FIZ Aktywów Niepublcznych",
+							"share": 8.28
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 12.74
+						},
+						{
+							"month": 2,
+							"value": 12.2
+						},
+						{
+							"month": 3,
+							"value": 12.4
+						},
+						{
+							"month": 4,
+							"value": 13.78
+						},
+						{
+							"month": 5,
+							"value": 12.28
+						},
+						{
+							"month": 6,
+							"value": 13.62
+						},
+						{
+							"month": 7,
+							"value": 12.2
+						},
+						{
+							"month": 8,
+							"value": 11.8
+						},
+						{
+							"month": 9,
+							"value": 10.6
+						},
+						{
+							"month": 10,
+							"value": 9.75
+						},
+						{
+							"month": 11,
+							"value": 9.34
+						},
+						{
+							"month": 12,
+							"value": 9.88
+						}
+					]
+				},
+				{
+					"year": 2016,
+					"incomes": "1197698",
+					"net_profit": "55127",
+					"operative_profit": "82407",
+					"equites": "60375",
+					"debts": "467590",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "4.33",
+					"dividend": "0.15",
+					"cost_of_board": "26900",
+					"events": [
+						"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
+						"połączenie ze spółką brytyjską",
+						"budowa centrum badawczego ze środków NCBiR"
+					],
+					"board": [
+						"Marcin Golec",
+						"Włodzimierz Masłowski",
+						"Tomasz Śnitała"
+					],
+					"shareholders": [
+						{
+							"holder": "MP Inwestors SCSp",
+							"share": 37.62
+						},
+						{
+							"holder": "MPSZ Sp. z o.o.",
+							"share": 13.35
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 9.72
+						},
+						{
+							"holder": "VESTA FIZ Aktywów Niepublcznych",
+							"share": 8.28
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 6.28
+						},
+						{
+							"month": 2,
+							"value": 7.14
+						},
+						{
+							"month": 3,
+							"value": 7.06
+						},
+						{
+							"month": 4,
+							"value": 7.72
+						},
+						{
+							"month": 5,
+							"value": 8.42
+						},
+						{
+							"month": 6,
+							"value": 8.02
+						},
+						{
+							"month": 7,
+							"value": 9.19
+						},
+						{
+							"month": 8,
+							"value": 10.04
+						},
+						{
+							"month": 9,
+							"value": 12.28
+						},
+						{
+							"month": 10,
+							"value": 12.68
+						},
+						{
+							"month": 11,
+							"value": 11.93
+						},
+						{
+							"month": 12,
+							"value": 12.77
+						}
+					]
+				},
+				{
+					"year": 2015,
+					"incomes": "630276",
+					"net_profit": "33946",
+					"operative_profit": "44608",
+					"equites": "60375",
+					"debts": "272700",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "3.59",
+					"dividend": "0.24",
+					"cost_of_board": "25342",
+					"events": [
+						"Rynek rosyjski pozostaje pod wpływem sytuacji politycznej: Grupa Wielton zakończyła 2015 r. sprzedażą narynku rosyjskim w liczbie 489 sztuk, tj .61 .6 % spadku rdr.",
+						"Rynek włoski pokazał najszybszy wzrost w Europie Zachodniej o 79,2% rdr.",
+						"W obszarze inwestycji, w lutym br. uruchomiono Centrum Badawczo-Rozwojowe Wielton."
+					],
+					"board": [
+						"Mariusz Golec",
+						"Włodzimierz Masłowski",
+						"Tomasz Śniatała",
+						"Thomas Hajek"
+					],
+					"shareholders": [
+						{
+							"holder": "MP Inwestors SCSp",
+							"share": 37.63
+						},
+						{
+							"holder": "VESTA FIZ Aktywów Niepublcznych",
+							"share": 13.17
+						},
+						{
+							"holder": "Łukasz Tylkowsk",
+							"share": 10.77
+						},
+						{
+							"holder": "MPSZ Sp. z o.o.",
+							"share": 13.35
+						},
+						{
+							"holder": "Aviva Investors Poland",
+							"share": 6.54
+						},
+						{
+							"holder": "Pozostali",
+							"share": 18.56
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 4.15
+						},
+						{
+							"month": 2,
+							"value": 4.92
+						},
+						{
+							"month": 3,
+							"value": 5.08
+						},
+						{
+							"month": 4,
+							"value": 5.2
+						},
+						{
+							"month": 5,
+							"value": 6.85
+						},
+						{
+							"month": 6,
+							"value": 6.47
+						},
+						{
+							"month": 7,
+							"value": 7.14
+						},
+						{
+							"month": 8,
+							"value": 7.96
+						},
+						{
+							"month": 9,
+							"value": 7.25
+						},
+						{
+							"month": 10,
+							"value": 7.56
+						},
+						{
+							"month": 11,
+							"value": 7.06
+						},
+						{
+							"month": 12,
+							"value": 7.18
+						}
+					]
+				},
+				{
+					"year": 2014,
+					"incomes": "584207",
+					"net_profit": "24477",
+					"operative_profit": "26496",
+					"equites": "60375",
+					"debts": "200448",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "3.21",
+					"dividend": "0.29",
+					"cost_of_board": "24360",
+					"events": [
+						"w roku obrotowym 2014 zysk operacyjny wyniósł 26,5 mln zł, co stanowi spadek o 25,1% w porównaniu z rokiem 2013. Emitent tłumaczy to częściowo zmianami na wschodzie ",
+						"emitent liczy, że w najbliższym czasie sfinalizuje przejęcie francuskiej spółki Fruehauf, która ma być środkiem w ekspansji na rynki Europy Zachodniej, w tym kraje Beneluksu.",
+						"Spółka Wielton rozpoczęła także sprzedaż na rynek włoski pod logo trzech tamtejszych marek: Merker, VIBERTI i CARDI.Produkty sprzedawane we Włoszech dopasowane są do tamtejszego rynku, produkowane w Polsce i wysyłane w częściach do montażu."
+					],
+					"board": [
+						"Jarosław Szczepek",
+						"Mariusz Golec",
+						"Tomasz Śniatała",
+						"Thomas Hajek"
+					],
+					"shareholders": [
+						{
+							"holder": "MP Inwestors FIZ",
+							"share": 37.63
+						},
+						{
+							"holder": "Copernicus TFI S.A.",
+							"share": 13.17
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 10.77
+						},
+						{
+							"holder": "Mariusz Szataniak",
+							"share": 6.67
+						},
+						{
+							"holder": "Paweł Szataniak",
+							"share": 6.67
+						},
+						{
+							"holder": "Aviva Investors Poland",
+							"share": 6.49
+						},
+						{
+							"holder": "Pozostali",
+							"share": 18.60
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 6.83
+						},
+						{
+							"month": 2,
+							"value": 6.20
+						},
+						{
+							"month": 3,
+							"value": 5.10
+						},
+						{
+							"month": 4,
+							"value": 4.80
+						},
+						{
+							"month": 5,
+							"value": 5.12
+						},
+						{
+							"month": 6,
+							"value": 5.20
+						},
+						{
+							"month": 7,
+							"value": 6.10
+						},
+						{
+							"month": 8,
+							"value": 6.24
+						},
+						{
+							"month": 9,
+							"value": 5.79
+						},
+						{
+							"month": 10,
+							"value": 5.40
+						},
+						{
+							"month": 11,
+							"value": 4.42
+						},
+						{
+							"month": 12,
+							"value": 3.66
+						}
+					]
+				},
+				{
+					"year": 2013,
+					"incomes": "588101",
+					"net_profit": "25786",
+					"operative_profit": "35351",
+					"equites": "60375",
+					"debts": "200771",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "2.89",
+					"dividend": "0.24",
+					"cost_of_board": "19657",
+					"events": [
+						"rozpoczęto działania w ramach projektu obejmującego utworzenie Centrum Badawczo– Rozwojowego w zakresie innowacyjnych środków transportu.Szacowane nakłady na realizację projektu w całym okresie, który będzie objęty harmonogramem inwestycji wyniosą 25.8 mln zł brutto ",
+						"w związku z nadzwyczajnymi zdarzeniami na Ukrainie i w Rosji istnieje ryzyko w obrotach handlowych na rynkach rosyjskim i ukraińskim i wiąże się w głównej mierze z deprecjacją rubla i hrywny "
+					],
+					"board": [
+						"Jarosław Szczepek",
+						"Włodzimierz Masłowski",
+						"Mariusz Golec",
+						"Tomasz Śniatała"
+					],
+					"shareholders": [
+						{
+							"holder": "IPOPEMA I FIZAN",
+							"share": 38.62
+						},
+						{
+							"holder": "Jakub Prozner",
+							"share": 14.01
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 10.77
+						},
+						{
+							"holder": "Mariusz Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "Paweł Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "Aviva Investors Poland",
+							"share": 5.25
+						},
+						{
+							"holder": "Pozostali",
+							"share": 18.00
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 3.65
+						},
+						{
+							"month": 2,
+							"value": 3.45
+						},
+						{
+							"month": 3,
+							"value": 3.07
+						},
+						{
+							"month": 4,
+							"value": 3.20
+						},
+						{
+							"month": 5,
+							"value": 3.50
+						},
+						{
+							"month": 6,
+							"value": 3.77
+						},
+						{
+							"month": 7,
+							"value": 4.34
+						},
+						{
+							"month": 8,
+							"value": 4.50
+						},
+						{
+							"month": 9,
+							"value": 5.40
+						},
+						{
+							"month": 10,
+							"value": 6.43
+						},
+						{
+							"month": 11,
+							"value": 6.12
+						},
+						{
+							"month": 12,
+							"value": 6.00
+						}
+					]
+				},
+				{
+					"year": 2012,
+					"incomes": "605238",
+					"net_profit": "22885",
+					"operative_profit": "29040",
+					"equites": "60375",
+					"debts": "215825",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "2.70",
+					"dividend": "0.20",
+					"cost_of_board": "18176",
+					"events": [
+						"spółka zależna Wielton Ukraina rozwija działalność, natomiast w roku 2012 ustanowiona została spółka zależna na Białorusi",
+						"nowy produkty: nowa skonstruowaną przez inżynierów zakładu aluminiowa naczepa-chłodnia, nowa naczepa kurtynowa, nowa wywrotka aluminiowa oraz przyczepy rolnicze dedykowane dla segmentu AGRO ",
+						"zgodnie z komunikatami zwiekszano linie kredytową z bankiem PKO BP S.A."
+					],
+					"board": [
+						"Jarosław Szczepek",
+						"Włodzimierz Masłowski",
+						"Mariusz Golec",
+						"Tomasz Śniatała"
+					],
+					"shareholders": [
+						{
+							"holder": "IPOPEMA I FIZAN",
+							"share": 37.62
+						},
+						{
+							"holder": "Jakub Prozner",
+							"share": 16.01
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 10.77
+						},
+						{
+							"holder": "Mariusz Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "Paweł Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "ING TFI S.A",
+							"share": 5.25
+						},
+						{
+							"holder": "Pozostali",
+							"share": 17.00
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 2.26
+						},
+						{
+							"month": 2,
+							"value": 2.70
+						},
+						{
+							"month": 3,
+							"value": 2.59
+						},
+						{
+							"month": 4,
+							"value": 2.47
+						},
+						{
+							"month": 5,
+							"value": 2.18
+						},
+						{
+							"month": 6,
+							"value": 2.49
+						},
+						{
+							"month": 7,
+							"value": 2.36
+						},
+						{
+							"month": 8,
+							"value": 2.45
+						},
+						{
+							"month": 9,
+							"value": 2.39
+						},
+						{
+							"month": 10,
+							"value": 3.79
+						},
+						{
+							"month": 11,
+							"value": 3.69
+						},
+						{
+							"month": 12,
+							"value": 3.73
+						}
+					]
+				},
+				{
+					"year": 2011,
+					"incomes": "496045",
+					"net_profit": "10368",
+					"operative_profit": "18721",
+					"equites": "60375",
+					"debts": "229038",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "2.52",
+					"dividend": "0",
+					"cost_of_board": "13154",
+					"events": [
+						"ukierunkowanie sprzedaży na rynki Europy Wschodniej, w szczególności do Rosji, która stała się najważniejszym rynkiem dla Wieltonu.W IV kwartale sprzedaż za granicą odpowiadała za blisko 70 % przychodów spółki ",
+						"rozwój współpracy i kooperacja kontraktowa z największymi producentami samochodów ciężarowych takimi jak: Scania, Volvo, Man "
+					],
+					"board": [
+						"Jarosław Szczepek",
+						"Włodzimierz Masłowski",
+						"Mariusz Golec",
+						"Tomasz Śniatała"
+					],
+					"shareholders": [
+						{
+							"holder": "IPOPEMA I FIZAN",
+							"share": 37.62
+						},
+						{
+							"holder": "Jakub Prozner",
+							"share": 16.01
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 10.77
+						},
+						{
+							"holder": "Mariusz Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "Paweł Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "ING TFI S.A",
+							"share": 5.25
+						},
+						{
+							"holder": "Pozostali",
+							"share": 17.00
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 3.65
+						},
+						{
+							"month": 2,
+							"value": 3.61
+						},
+						{
+							"month": 3,
+							"value": 3.69
+						},
+						{
+							"month": 4,
+							"value": 4.25
+						},
+						{
+							"month": 5,
+							"value": 3.10
+						},
+						{
+							"month": 6,
+							"value": 2.91
+						},
+						{
+							"month": 7,
+							"value": 2.52
+						},
+						{
+							"month": 8,
+							"value": 1.99
+						},
+						{
+							"month": 9,
+							"value": 1.37
+						},
+						{
+							"month": 10,
+							"value": 1.96
+						},
+						{
+							"month": 11,
+							"value": 1.70
+						},
+						{
+							"month": 12,
+							"value": 1.82
+						}
+					]
+				},
+				{
+					"year": 2010,
+					"incomes": "261793",
+					"net_profit": "-8804",
+					"operative_profit": "-5429",
+					"equites": "60375",
+					"debts": "176881",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "2.36",
+					"dividend": 0,
+					"cost_of_board": "12537",
+					"events": [
+						"rozwój działalności handlowej spółek zależnych: Wielton Rosja i Wielton Ukraina prowadzących działalność dystrybucyjną",
+						"prowadzenie przez spółkę działalności gospodarczej na terenie Łódzkiej Specjalnej Strefy Ekonomicznej, z czym łączą się przywileje(podatkowe lub możliwość korzystania z pomocy publicznej), ale także wymogi spełnienia kryteriów ",
+						"spółka przewiduje rozstrzygnięcie decyzji dotyczącej kooperacji bądź budowy zakładu produkcyjnego lub montowni pojazdów na terenie Rosji "
+					],
+					"board": [
+						"Jarosław Szczepek",
+						"Włodzimierz Masłowski",
+						"Mariusz Golec",
+						"Paweł Gońda"
+					],
+					"shareholders": [
+						{
+							"holder": "IPOPEMA I FIZAN",
+							"share": 37.62
+						},
+						{
+							"holder": "Jakub Prozner",
+							"share": 16.01
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 10.77
+						},
+						{
+							"holder": "Mariusz Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "Paweł Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "ING TFI S.A",
+							"share": 5.25
+						},
+						{
+							"holder": "Pozostali",
+							"share": 17.00
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 3.21
+						},
+						{
+							"month": 2,
+							"value": 3.09
+						},
+						{
+							"month": 3,
+							"value": 3.73
+						},
+						{
+							"month": 4,
+							"value": 3.74
+						},
+						{
+							"month": 5,
+							"value": 3.44
+						},
+						{
+							"month": 6,
+							"value": 3.45
+						},
+						{
+							"month": 7,
+							"value": 3.35
+						},
+						{
+							"month": 8,
+							"value": 3.39
+						},
+						{
+							"month": 9,
+							"value": 3.28
+						},
+						{
+							"month": 10,
+							"value": 3.25
+						},
+						{
+							"month": 11,
+							"value": 3.61
+						},
+						{
+							"month": 12,
+							"value": 3.94
+						}
+					]
+				},
+				{
+					"year": 2009,
+					"incomes": "162833",
+					"net_profit": "-9900",
+					"operative_profit": "-10156",
+					"equites": "60375",
+					"debts": "135235",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "2.50",
+					"dividend": 0.24,
+					"cost_of_board": "9095",
+					"events": [
+						"Wielton wchodzi na rynek naszep rolniczych i promuje swój nowy brand Wielton AGRO, stworzył 35 punktów dilerskich",
+						"Po trudnym dla branży 2008 roku wstrzymano inwestycje w zakład produkcyjny nr 2",
+						"Program 'Wielton Finance' działa w systemie wspomagania zakupu naczep przez klienta, działa także pakiet assistance dla naczep sprzedawanych w systemie wielton service"
+					],
+					"board": [
+						"Włodzimierz Masłowski",
+						"Mariusz Golec",
+						"Paweł Gońda"
+					],
+					"shareholders": [
+						{
+							"holder": "IPOPEMA I FIZAN",
+							"share": 40.4
+						},
+						{
+							"holder": "Jakub Prozner",
+							"share": 16.00
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 12.7
+						},
+						{
+							"holder": "Mariusz Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "Paweł Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "Pozostali",
+							"share": 17.5
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 1.49
+						},
+						{
+							"month": 2,
+							"value": 1.41
+						},
+						{
+							"month": 3,
+							"value": 1.61
+						},
+						{
+							"month": 4,
+							"value": 1.67
+						},
+						{
+							"month": 5,
+							"value": 1.66
+						},
+						{
+							"month": 6,
+							"value": 2.81
+						},
+						{
+							"month": 7,
+							"value": 3.05
+						},
+						{
+							"month": 8,
+							"value": 3.97
+						},
+						{
+							"month": 9,
+							"value": 4.01
+						},
+						{
+							"month": 10,
+							"value": 3.81
+						},
+						{
+							"month": 11,
+							"value": 3.31
+						},
+						{
+							"month": 12,
+							"value": 3.30
+						}
+					]
+				},
+				{
+					"year": 2008,
+					"incomes": "368435",
+					"net_profit": "36176",
+					"operative_profit": "53589",
+					"equites": "60375",
+					"debts": "145938",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "2.90",
+					"dividend": 0.22,
+					"cost_of_board": "8822",
+					"events": [
+						"Wielton obiera kierunek na wschód, we wrześniu 2008 nastąpiło zarejestrowanie spółki Wielton Vostok Sp. z o.o. - celem spółki jest zwiekszanie sprzedaży w Rosji oraz zapewnienie serwisu",
+						"Z uwagi na trudny rok w branży zredukowano zatrudnienie o 25%, dalsze działania restrukturyzacyjne będą miały na celu zwiekszyć udział sprzedaży i rozwijać inne segmenty"
+					],
+					"board": [
+						"Włodzimierz Masłowski",
+						"Mariusz Golec",
+						"Paweł Gońda"
+					],
+					"shareholders": [
+						{
+							"holder": "IPOPEMA I FIZAN",
+							"share": 41.4
+						},
+						{
+							"holder": "Jakub Prozner",
+							"share": 16.00
+						},
+						{
+							"holder": "Łukasz Tylkowski",
+							"share": 2.7
+						},
+						{
+							"holder": "Mariusz Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "Paweł Szataniak",
+							"share": 6.7
+						},
+						{
+							"holder": "Pozostali",
+							"share": 16.5
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 6.07
+						},
+						{
+							"month": 2,
+							"value": 7.67
+						},
+						{
+							"month": 3,
+							"value": 7.21
+						},
+						{
+							"month": 4,
+							"value": 6.92
+						},
+						{
+							"month": 5,
+							"value": 6.62
+						},
+						{
+							"month": 6,
+							"value": 5.77
+						},
+						{
+							"month": 7,
+							"value": 4.64
+						},
+						{
+							"month": 8,
+							"value": 5.28
+						},
+						{
+							"month": 9,
+							"value": 4.59
+						},
+						{
+							"month": 10,
+							"value": 2.49
+						},
+						{
+							"month": 11,
+							"value": 1.99
+						},
+						{
+							"month": 12,
+							"value": 1.79
+						}
+					]
+				}
 			]
-		  },
-		  {
-			"year": 2018,
-			"incomes": "2068313",
-			"net_profit": "69369",
-			"operative_profit": "96082",
-			"liczba_akcji": "60375",
-			"zadluzenie": "1160487",
-			"należnosci": "",
-			"acc_value": "",
-			"dividend": "0.25",
-			"koszty_zarzadu": "",
-			"events": [
-			  "w listopadzie miał miejsce pożar na Wydziale Lakierni KTL w Wieluniu, mienie jest objęte ubezpieczniem, jednak straty z tego tytułu wycenione sa na 40 mln zł",
-			  "budowa centrum badawczego ze środków NCBiR "
-			],
-			"zarzad": [
-			  "Marcin Golec",
-			  ""
-			],
-			"akcjonariat": {
-			  "Szamburski": "25%"
-			},
-			"cena": [
-			  {
-				"month": 1,
-				"value": 12.74
-			  },
-			  {
-				"month": 2,
-				"value": 12.2
-			  },
-			  {
-				"month": 3,
-				"value": 12.4
-			  },
-			  {
-				"month": 4,
-				"value": 13.78
-			  },
-			  {
-				"month": 5,
-				"value": 12.28
-			  },
-			  {
-				"month": 6,
-				"value": 13.62
-			  },
-			  {
-				"month": 7,
-				"value": 12.2
-			  },
-			  {
-				"month": 8,
-				"value": 11.8
-			  },
-			  {
-				"month": 9,
-				"value": 10.6
-			  },
-			  {
-				"month": 10,
-				"value": 9.75
-			  },
-			  {
-				"month": 11,
-				"value": 9.34
-			  },
-			  {
-				"month": 12,
-				"value": 9.88
-			  }
+		},
+		{
+			"id": 2,
+			"name": "ATAL",
+			"ticker": "1AT",
+			"date_IPO": "23-07-2015",
+			"price_IPO": 20.47,
+			"years": [
+				{
+					"year": 2019,
+					"incomes": "",
+					"net_profit": "",
+					"operative_profit": "",
+					"equites": "",
+					"debts": "",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "",
+					"dividend": 4.70,
+					"cost_of_board": "",
+					"events": [],
+					"board": [
+						"Zbigniew Juroszek",
+						"Mateusz Juroszek",
+						"Mateusz Bromboszcz"
+					],
+					"shareholders": [
+						{
+							"holder": "Juroszek Investments sp. z o. o.",
+							"share": 83.21
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 31.30
+						},
+						{
+							"month": 2,
+							"value": 37.20
+						},
+						{
+							"month": 3,
+							"value": 39.50
+						},
+						{
+							"month": 4,
+							"value": 39.80
+						},
+						{
+							"month": 5,
+							"value": 41.50
+						},
+						{
+							"month": 6,
+							"value": 36.60
+						},
+						{
+							"month": 7,
+							"value": null
+						},
+						{
+							"month": 8,
+							"value": null
+						},
+						{
+							"month": 9,
+							"value": null
+						},
+						{
+							"month": 10,
+							"value": null
+						},
+						{
+							"month": 11,
+							"value": null
+						},
+						{
+							"month": 12,
+							"value": null
+						}
+					]
+				},
+				{
+					"year": 2018,
+					"incomes": "1055023",
+					"net_profit": "200705",
+					"operative_profit": "259600",
+					"equites": "38714.61",
+					"debts": "1014718",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "22.17",
+					"dividend": 3.54,
+					"cost_of_board": "",
+					"events": [],
+					"board": [
+						"Zbigniew Juroszek",
+						"Mateusz Juroszek",
+						"Mateusz Bromboszcz"
+					],
+					"shareholders": [
+						{
+							"holder": "Juroszek Investments sp. z o. o.",
+							"share": 83.21
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 42.00
+						},
+						{
+							"month": 2,
+							"value": 41.90
+						},
+						{
+							"month": 3,
+							"value": 43.00
+						},
+						{
+							"month": 4,
+							"value": 43.50
+						},
+						{
+							"month": 5,
+							"value": 44.00
+						},
+						{
+							"month": 6,
+							"value": 34.30
+						},
+						{
+							"month": 7,
+							"value": 35.00
+						},
+						{
+							"month": 8,
+							"value": 32.50
+						},
+						{
+							"month": 9,
+							"value": 32.00
+						},
+						{
+							"month": 10,
+							"value": 30.30
+						},
+						{
+							"month": 11,
+							"value": 31.50
+						},
+						{
+							"month": 12,
+							"value": 28.00
+						}
+					]
+				},
+				{
+					"year": 2017,
+					"incomes": "865795",
+					"net_profit": "171192",
+					"operative_profit": "221997",
+					"equites": "38714.61",
+					"debts": "1001468",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "20.53",
+					"dividend": 1.68,
+					"cost_of_board": "",
+					"events": [],
+					"board": [
+						"Zbigniew Juroszek",
+						"Mateusz Juroszek",
+						"Mateusz Bromboszcz"
+					],
+					"shareholders": [
+						{
+							"holder": "Juroszek Investments sp. z o. o.",
+							"share": 83.21
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 27.71
+						},
+						{
+							"month": 2,
+							"value": 30.40
+						},
+						{
+							"month": 3,
+							"value": 30.83
+						},
+						{
+							"month": 4,
+							"value": 36.40
+						},
+						{
+							"month": 5,
+							"value": 40.43
+						},
+						{
+							"month": 6,
+							"value": 37.99
+						},
+						{
+							"month": 7,
+							"value": 38.35
+						},
+						{
+							"month": 8,
+							"value": 40.40
+						},
+						{
+							"month": 9,
+							"value": 43.40
+						},
+						{
+							"month": 10,
+							"value": 41.49
+						},
+						{
+							"month": 11,
+							"value": 43.00
+						},
+						{
+							"month": 12,
+							"value": 42.15
+						}
+					]
+				},
+				{
+					"year": 2016,
+					"incomes": "506840",
+					"net_profit": "89442",
+					"operative_profit": "114770",
+					"equites": "38714.61",
+					"debts": "837957",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "17.78",
+					"dividend": 0.61,
+					"cost_of_board": "",
+					"events": [],
+					"board": [
+						"Zbigniew Juroszek",
+						"Mateusz Juroszek",
+						"Mateusz Bromboszcz"
+					],
+					"shareholders": [
+						{
+							"holder": "Juroszek Investments sp. z o. o.",
+							"share": 83.21
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 17.87
+						},
+						{
+							"month": 2,
+							"value": 20.23
+						},
+						{
+							"month": 3,
+							"value": 19.89
+						},
+						{
+							"month": 4,
+							"value": 22.99
+						},
+						{
+							"month": 5,
+							"value": 23.60
+						},
+						{
+							"month": 6,
+							"value": 23.36
+						},
+						{
+							"month": 7,
+							"value": 22.77
+						},
+						{
+							"month": 8,
+							"value": 25.38
+						},
+						{
+							"month": 9,
+							"value": 25.08
+						},
+						{
+							"month": 10,
+							"value": 26.07
+						},
+						{
+							"month": 11,
+							"value": 26.56
+						},
+						{
+							"month": 12,
+							"value": 27.34
+						}
+					]
+				},
+				{
+					"year": 2015,
+					"incomes": "226847",
+					"net_profit": "47291",
+					"operative_profit": "40758",
+					"equites": "38714.61",
+					"debts": "598531",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "16.09",
+					"dividend": 0,
+					"cost_of_board": "",
+					"events": [],
+					"board": [
+						"Zbigniew Juroszek",
+						"Mateusz Juroszek",
+						"Mateusz Bromboszcz"
+					],
+					"shareholders": [
+						{
+							"holder": "Juroszek Investments sp. z o. o.",
+							"share": 83.21
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": null
+						},
+						{
+							"month": 2,
+							"value": null
+						},
+						{
+							"month": 3,
+							"value": null
+						},
+						{
+							"month": 4,
+							"value": null
+						},
+						{
+							"month": 5,
+							"value": null
+						},
+						{
+							"month": 6,
+							"value": null
+						},
+						{
+							"month": 7,
+							"value": 20.47
+						},
+						{
+							"month": 8,
+							"value": 20.09
+						},
+						{
+							"month": 9,
+							"value": 19.73
+						},
+						{
+							"month": 10,
+							"value": 20.29
+						},
+						{
+							"month": 11,
+							"value": 20.57
+						},
+						{
+							"month": 12,
+							"value": 20.10
+						}
+					]
+				}
 			]
-		  },
-		  {
-			"year": 2017,
-			"incomes": "1000000",
-			"net_profit": "200",
-			"operative_profit": "20",
-			"liczba_akcji": "250000",
-			"zadluzenie": "20000",
-			"należnosci": "2000",
-			"zobowiazania": "40000",
-			"acc_value": "200000",
-			"dividend": "0.25",
-			"koszty_zarzadu": "40000",
-			"events": [
-			  "nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			  "połączenie ze spółką brytyjską",
-			  "budowa centrum badawczego ze środków NCBiR"
-			],
-			"zarzad": [
-			  "Marcin Golec",
-			  "Ktos tam",
-			  "Ktos Tam"
-			],
-			"akcjonariat": {
-			  "Szamburski": "25%"
-			},
-			"cena": [
-			  {
-				"month": 1,
-				"value": 12.74
-			  },
-			  {
-				"month": 2,
-				"value": 12.2
-			  },
-			  {
-				"month": 3,
-				"value": 12.4
-			  },
-			  {
-				"month": 4,
-				"value": 13.78
-			  },
-			  {
-				"month": 5,
-				"value": 12.28
-			  },
-			  {
-				"month": 6,
-				"value": 13.62
-			  },
-			  {
-				"month": 7,
-				"value": 12.2
-			  },
-			  {
-				"month": 8,
-				"value": 11.8
-			  },
-			  {
-				"month": 9,
-				"value": 10.6
-			  },
-			  {
-				"month": 10,
-				"value": 9.75
-			  },
-			  {
-				"month": 11,
-				"value": 9.34
-			  },
-			  {
-				"month": 12,
-				"value": 9.88
-			  }
+		},
+		{
+			"id": 3,
+			"name": "TEN SQUARE GAMES",
+			"ticker": "TEN",
+			"date_IPO": "11-05-2018",
+			"price_IPO": "62.00",
+			"years": [
+				{
+					"year": 2019,
+					"incomes": "",
+					"net_profit": "",
+					"operative_profit": "",
+					"equites": "",
+					"debts": "",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "",
+					"dividend": 3.78,
+					"cost_of_board": "",
+					"events": [
+						"Wpływy Ten Square Games wzrosły dwukrotnie, a zysk trzykrotnie. 96 proc. przychodów z mikropłatności, 83 proc. z „Fishing Clash”",
+						"Ten Square Games miał szacunkowo 49,7 mln zł przychodów w II kwartale 2019 r.",
+						"Akcjonariusze Ten Square Games zdecydowali o 3,78 zł dywidendy na akcję za 2018"
+					],
+					"board": [
+						"Maciej Popowicz",
+						"Arkadiusz Pernal"
+					],
+					"shareholders": [
+						{
+							"holder": "Maciej Popowicz",
+							"share": 39.21
+						},
+						{
+							"holder": "Arkadiusz Pernal",
+							"share": 18.76
+						},
+						{
+							"holder": "NN OFE",
+							"share": 7.55
+						},
+						{
+							"holder": "Pozostali",
+							"share": 34.47
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": 85.80
+						},
+						{
+							"month": 2,
+							"value": 90.50
+						},
+						{
+							"month": 3,
+							"value": 100.23
+						},
+						{
+							"month": 4,
+							"value": 121.50
+						},
+						{
+							"month": 5,
+							"value": 125.67
+						},
+						{
+							"month": 6,
+							"value": 123.50
+						},
+						{
+							"month": 7,
+							"value": null
+						},
+						{
+							"month": 8,
+							"value": null
+						},
+						{
+							"month": 9,
+							"value": null
+						},
+						{
+							"month": 10,
+							"value": null
+						},
+						{
+							"month": 11,
+							"value": null
+						},
+						{
+							"month": 12,
+							"value": null
+						}
+					]
+				},
+				{
+					"year": 2018,
+					"incomes": "115258",
+					"net_profit": "36468",
+					"operative_profit": "44315",
+					"equites": "7275",
+					"debts": "",
+					"dues": "",
+					"oblig": "",
+					"acc_value": "5.785",
+					"dividend": 0,
+					"cost_of_board": "",
+					"events": [
+						"Ten Square Games, producent i wydawca gier mobilnych oraz przeglądarkowych, zadebiutuje na GPW w piątek, 11 maja - poinformowała spółka w komunikacie.",
+						"Kurs akcji Ten Square Games wzrósł w debiucie o 13,5 proc",
+						"Ten Square Games rozpoczął produkcję dwóch gier na '19; podtrzymuje plany na rynku chińskim"
+					],
+					"board": [
+						"Maciej Popowicz",
+						"Arkadiusz Pernal"
+					],
+					"shareholders": [
+						{
+							"holder": "Maciej Popowicz",
+							"share": 39.21
+						},
+						{
+							"holder": "Arkadiusz Pernal",
+							"share": 18.76
+						},
+						{
+							"holder": "NN OFE",
+							"share": 7.55
+						},
+						{
+							"holder": "Pozostali",
+							"share": 34.47
+						}
+					],
+					"price": [
+						{
+							"month": 1,
+							"value": null
+						},
+						{
+							"month": 2,
+							"value": null
+						},
+						{
+							"month": 3,
+							"value": null
+						},
+						{
+							"month": 4,
+							"value": null
+						},
+						{
+							"month": 5,
+							"value": 67.34
+						},
+						{
+							"month": 6,
+							"value": 76.76
+						},
+						{
+							"month": 7,
+							"value": 102.58
+						},
+						{
+							"month": 8,
+							"value": 101.30
+						},
+						{
+							"month": 9,
+							"value": 92.50
+						},
+						{
+							"month": 10,
+							"value": 75.40
+						},
+						{
+							"month": 11,
+							"value": 88.40
+						},
+						{
+							"month": 12,
+							"value": 80.00
+						}
+					]
+				}
 			]
-		  },
-		  {
-			"year": 2016,
-			"incomes": "1000000",
-			"net_profit": "200",
-			"operative_profit": "20",
-			"liczba_akcji": "250000",
-			"zadluzenie": "20000",
-			"należnosci": "2000",
-			"zobowiazania": "40000",
-			"acc_value": "200000",
-			"dividend": "0.25",
-			"koszty_zarzadu": "40000",
-			"events": [
-			  "nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			  "połączenie ze spółką brytyjską",
-			  "budowa centrum badawczego ze środków NCBiR"
-			],
-			"zarzad": [
-			  "Marcin Golec",
-			  "Ktos tam",
-			  "Ktos Tam"
-			],
-			"akcjonariat": {
-			  "Szamburski": "25%"
-			},
-			"cena": {
-			  "jan": "12.7",
-			  "feb": "",
-			  "mar": "",
-			  "apr": "",
-			  "may": "",
-			  "jun": "",
-			  "jul": "",
-			  "aug": "",
-			  "sep": "",
-			  "oct": "",
-			  "nov": "",
-			  "dec": ""
-			}
-		  },
-		  {
-			"year": 2015,
-			"incomes": "630276",
-			"net_profit": "33946",
-			"operative_profit": "44608",
-			"liczba_akcji": "60375",
-			"zadluzenie": "272700",
-			"należnosci": "",
-			"zobowiazania": "",
-			"acc_value": "3.59",
-			"dividend": "0.24",
-			"koszty_zarzadu": "25342",
-			"events": [
-			  "Rynek rosyjski pozostaje pod wpływem sytuacji politycznej: Grupa Wielton zakończyła 2015 r. sprzedażą narynku rosyjskim w liczbie 489 sztuk, tj .61 .6 % spadku rdr.",
-			  "Rynek włoski pokazał najszybszy wzrost w Europie Zachodniej o 79,2% rdr.",
-			  "W obszarze inwestycji, w lutym br. uruchomiono Centrum Badawczo-Rozwojowe Wielton."
-			],
-			"zarzad": [
-			  "Mariusz Golec",
-			  "Włodzimierz Masłowski",
-			  "Tomasz Śniatała",
-			  "Thomas Hajek"
-			],
-			"akcjonariat": [
-			  {"holder": "MP Inwestors SCSp", "share": 37.63},
-			  {"holder": "VESTA FIZ Aktywów Niepublcznych", "share":  13.17},
-			  {"holder": "Łukasz Tylkowsk", "share": 10.77},
-			  {"holder": "MPSZ Sp. z o.o.", "share": 13.35},
-			  {"holder": "Aviva Investors Poland", "share":  6.54},
-			  {"holder": "Pozostali", "share": 18.56}
-			],
-			"cena": [
-			  {
-				"month": 1,
-				"value": 4.15
-			  },
-			  {
-				"month": 2,
-				"value": 4.92
-			  },
-			  {
-				"month": 3,
-				"value": 5.08
-			  },
-			  {
-				"month": 4,
-				"value": 5.2
-			  },
-			  {
-				"month": 5,
-				"value": 6.85
-			  },
-			  {
-				"month": 6,
-				"value": 6.47
-			  },
-			  {
-				"month": 7,
-				"value": 7.14
-			  },
-			  {
-				"month": 8,
-				"value": 7.96
-			  },
-			  {
-				"month": 9,
-				"value": 7.25
-			  },
-			  {
-				"month": 10,
-				"value": 7.56
-			  },
-			  {
-				"month": 11,
-				"value": 7.06
-			  },
-			  {
-				"month": 12,
-				"value": 7.18
-			  }
-			]
-		  },
-		  {
-			"year": 2014,
-			"incomes": "584207",
-			"net_profit": "24477",
-			"operative_profit": "26496",
-			"liczba_akcji": "60375",
-			"zadluzenie": "200448",
-			"należnosci": "",
-			"zobowiazania": "",
-			"acc_value": "3.21",
-			"dividend": "0.29",
-			"koszty_zarzadu": "24360",
-			"events": [
-			  "w roku obrotowym 2014 zysk operacyjny wyniósł 26,5 mln zł, co stanowi spadek o 25,1% w porównaniu z rokiem 2013. Emitent tłumaczy to częściowo zmianami na wschodzie ",
-			  "emitent liczy, że w najbliższym czasie sfinalizuje przejęcie francuskiej spółki Fruehauf, która ma być środkiem w ekspansji na rynki Europy Zachodniej, w tym kraje Beneluksu.",
-			  "Spółka Wielton rozpoczęła także sprzedaż na rynek włoski pod logo trzech tamtejszych marek: Merker, VIBERTI i CARDI.Produkty sprzedawane we Włoszech dopasowane są do tamtejszego rynku, produkowane w Polsce i wysyłane w częściach do montażu."
-			],
-			"zarzad": [
-			  "Jarosław Szczepek",
-			  "Mariusz Golec",
-			  "Tomasz Śniatała",
-			  "Thomas Hajek"
-			],
-			"akcjonariat": [
-			    {"holder":"MP Inwestors FIZ", "share": 37.63},
-			   {"holder":"Copernicus TFI S.A.", "share": 13.17},
-			   {"holder":"Łukasz Tylkowski", "share": 10.77},
-			   {"holder":"Mariusz Szataniak", "share": 6.67},
-			   {"holder":"Paweł Szataniak", "share": 6.67},
-			   {"holder":"Aviva Investors Poland", "share": 6.49},
-			   {"holder":"Pozostali", "share": 18.60}
-				],
-			"cena": [
-			  {"month": 1, "value":  6.83},
-			  {"month": 2, "value":  6.20},
-			  {"month": 3, "value":  5.10},
-			  {"month": 4, "value":  4.80},
-			  {"month": 5, "value":  5.12},
-			  {"month": 6, "value":  5.20},
-			  {"month": 7, "value":  6.10},
-			  {"month": 8, "value":  6.24},
-			  {"month": 9, "value":  5.79},
-			  {"month": 10, "value": 5.40},
-			  {"month": 11, "value": 4.42},
-			  {"month": 12, "value": 3.66}
-			]
-		  },
-		  {
-			"year": 2013,
-			"incomes": "588101",
-			"net_profit": "25786",
-			"operative_profit": "35351",
-			"liczba_akcji": "60375",
-			"zadluzenie": "200771",
-			"należnosci": "",
-			"zobowiazania": "",
-			"acc_value": "2.89",
-			"dividend": "0.24",
-			"koszty_zarzadu": "19657",
-			"events": [
-			  "rozpoczęto działania w ramach projektu obejmującego utworzenie Centrum Badawczo– Rozwojowego w zakresie innowacyjnych środków transportu.Szacowane nakłady na realizację projektu w całym okresie, który będzie objęty harmonogramem inwestycji wyniosą 25.8 mln zł brutto ",
-			  "w związku z nadzwyczajnymi zdarzeniami na Ukrainie i w Rosji istnieje ryzyko w obrotach handlowych na rynkach rosyjskim i ukraińskim i wiąże się w głównej mierze z deprecjacją rubla i hrywny "
-			],
-			"zarzad": [
-			  "Jarosław Szczepek",
-			  "Włodzimierz Masłowski",
-			  "Mariusz Golec",
-			  "Tomasz Śniatała"
-			],
-			"akcjonariat": [
-			   {"holder": "IPOPEMA I FIZAN", "share": 38.62},
-			   {"holder": "Jakub Prozner", "share": 14.01},
-			   {"holder": "Łukasz Tylkowski", "share": 10.77},
-			   {"holder": "Mariusz Szataniak", "share": 6.7},
-			   {"holder": "Paweł Szataniak", "share": 6.7},
-			   {"holder": "Aviva Investors Poland", "share": 5.25},
-			   {"holder": "Pozostali", "share": 18.00}
-			],
-			"cena": [
-			  {"month": 1,  "value": 3.65},
-			  {"month": 2,  "value": 3.45},
-			  {"month": 3,  "value": 3.07},
-			  {"month": 4,  "value": 3.20},
-			  {"month": 5,  "value": 3.50},
-			  {"month": 6,  "value": 3.77},
-			  {"month": 7,  "value": 4.34},
-			  {"month": 8,  "value": 4.50},
-			  {"month": 9,  "value": 5.40},
-			  {"month": 10, "value": 6.43},
-			  {"month": 11, "value": 6.12},
-			  {"month": 12, "value": 6.00}
-			]
-		  },
-		  {
-			"year": 2012,
-			"incomes": "605238",
-			"net_profit": "22885",
-			"operative_profit": "29040",
-			"liczba_akcji": "60375",
-			"zadluzenie": "215825",
-			"należnosci": "",
-			"zobowiazania": "",
-			"acc_value": "2.70",
-			"dividend": "0.20",
-			"koszty_zarzadu": "18176",
-			"events": [
-			  "spółka zależna Wielton Ukraina rozwija działalność, natomiast w roku 2012 ustanowiona została spółka zależna na Białorusi",
-			  "nowy produkty: nowa skonstruowaną przez inżynierów zakładu aluminiowa naczepa-chłodnia, nowa naczepa kurtynowa, nowa wywrotka aluminiowa oraz przyczepy rolnicze dedykowane dla segmentu AGRO ",
-			  "zgodnie z komunikatami zwiekszano linie kredytową z bankiem PKO BP S.A."
-			],
-			"zarzad": [
-			  "Jarosław Szczepek",
-			  "Włodzimierz Masłowski",
-			  "Mariusz Golec",
-			  "Tomasz Śniatała"
-			],
-			"akcjonariat": [
-			   {"holder": "IPOPEMA I FIZAN", "share": 37.62},
-			   {"holder": "Jakub Prozner", "share": 16.01},
-			   {"holder": "Łukasz Tylkowski", "share": 10.77},
-			   {"holder": "Mariusz Szataniak", "share": 6.7},
-			   {"holder": "Paweł Szataniak", "share": 6.7},
-			   {"holder": "ING TFI S.A", "share": 5.25},
-			   {"holder": "Pozostali", "share": 17.00}
-			],
-			"cena": [
-			  {"month": 1,  "value": 2.26},
-			  {"month": 2,  "value": 2.70},
-			  {"month": 3,  "value": 2.59},
-			  {"month": 4,  "value": 2.47},
-			  {"month": 5,  "value": 2.18},
-			  {"month": 6,  "value": 2.49},
-			  {"month": 7,  "value": 2.36},
-			  {"month": 8,  "value": 2.45},
-			  {"month": 9,  "value": 2.39},
-			  {"month": 10, "value": 3.79},
-			  {"month": 11, "value": 3.69},
-			  {"month": 12, "value": 3.73}
-			]
-		  },
-		  {
-			"year": 2011,
-			"incomes": "496045",
-			"net_profit": "10368",
-			"operative_profit": "18721",
-			"liczba_akcji": "60375",
-			"zadluzenie": "229038",
-			"należnosci": "",
-			"zobowiazania": "",
-			"acc_value": "2.52",
-			"dividend": "0",
-			"koszty_zarzadu": "13154",
-			"events": [
-			  "ukierunkowanie sprzedaży na rynki Europy Wschodniej, w szczególności do Rosji, która stała się najważniejszym rynkiem dla Wieltonu.W IV kwartale sprzedaż za granicą odpowiadała za blisko 70 % przychodów spółki ",
-			  "rozwój współpracy i kooperacja kontraktowa z największymi producentami samochodów ciężarowych takimi jak: Scania, Volvo, Man "
-			],
-			"zarzad": [
-			  "Jarosław Szczepek",
-			  "Włodzimierz Masłowski",
-			  "Mariusz Golec",
-			  "Tomasz Śniatała"
-			],
-			"akcjonariat": [
-			   {"holder": "IPOPEMA I FIZAN", "share": 37.62},
-			   {"holder": "Jakub Prozner", "share": 16.01},
-			   {"holder": "Łukasz Tylkowski", "share": 10.77},
-			   {"holder": "Mariusz Szataniak", "share": 6.7},
-			   {"holder": "Paweł Szataniak", "share": 6.7},
-			   {"holder": "ING TFI S.A", "share": 5.25},
-			   {"holder": "Pozostali",  "share": 17.00}
-			],
-			"cena": [
-			  {"month": 1,  "value": 3.65},
-			  {"month": 2,  "value": 3.61},
-			  {"month": 3,  "value": 3.69},
-			  {"month": 4,  "value": 4.25},
-			  {"month": 5,  "value": 3.10},
-			  {"month": 6,  "value": 2.91},
-			  {"month": 7,  "value": 2.52},
-			  {"month": 8,  "value": 1.99},
-			  {"month": 9,  "value": 1.37},
-			  {"month": 10, "value": 1.96},
-			  {"month": 11, "value": 1.70},
-			  {"month": 12, "value": 1.82}
-			]
-		  },
-		  {
-			"year": 2010,
-			"incomes": "261793",
-			"net_profit": "-8804",
-			"operative_profit": "-5429",
-			"liczba_akcji": "60375",
-			"zadluzenie": "176881",
-			"należnosci": "",
-			"zobowiazania": "",
-			"acc_value": "2.36",
-			"dividend": "0",
-			"koszty_zarzadu": "12537",
-			"events": [
-			  "rozwój działalności handlowej spółek zależnych: Wielton Rosja i Wielton Ukraina prowadzących działalność dystrybucyjną",
-			  "prowadzenie przez spółkę działalności gospodarczej na terenie Łódzkiej Specjalnej Strefy Ekonomicznej, z czym łączą się przywileje(podatkowe lub możliwość korzystania z pomocy publicznej), ale także wymogi spełnienia kryteriów ",
-			  "spółka przewiduje rozstrzygnięcie decyzji dotyczącej kooperacji bądź budowy zakładu produkcyjnego lub montowni pojazdów na terenie Rosji "
-			],
-			"zarzad": [
-			  "Jarosław Szczepek",
-			  "Włodzimierz Masłowski",
-			  "Mariusz Golec",
-			  "Paweł Gońda"
-			],
-			"akcjonariat": [
-			   {"holder": "IPOPEMA I FIZAN", "share": 37.62},
-			   {"holder": "Jakub Prozner", "share": 16.01},
-			   {"holder": "Łukasz Tylkowski", "share": 10.77},
-			   {"holder": "Mariusz Szataniak", "share": 6.7},
-			   {"holder": "Paweł Szataniak", "share": 6.7},
-			   {"holder": "ING TFI S.A", "share": 5.25},
-			   {"holder": "Pozostali", "share": 17.00}
-			   ],
-			"cena": [
-			  {"month": 1,  "value":3.21},
-			  {"month": 2,  "value":3.09},
-			  {"month": 3,  "value":3.73},
-			  {"month": 4,  "value":3.74},
-			  {"month": 5,  "value":3.44},
-			  {"month": 6,  "value":3.45},
-			  {"month": 7,  "value":3.35},
-			  {"month": 8,  "value":3.39},
-			  {"month": 9,  "value":3.28},
-			  {"month": 10, "value":3.25},
-			  {"month": 11, "value":3.61},
-			  {"month": 12, "value":3.94}
-			  ]
-		  },
-		  {
-			"year": 2009,
-			"incomes": "162833",
-			"net_profit": "-9900",
-			"operative_profit": "-10156",
-			"liczba_akcji": "60375",
-			"zadluzenie": "135235",
-			"należnosci": "",
-			"zobowiazania": "",
-			"acc_value": "2.50",
-			"dividend": "0.24",
-			"koszty_zarzadu": "9095",
-			"events": [
-			  "Wielton wchodzi na rynek naszep rolniczych i promuje swój nowy brand Wielton AGRO, stworzył 35 punktów dilerskich",
-			  "Po trudnym dla branży 2008 roku wstrzymano inwestycje w zakład produkcyjny nr 2",
-			  "Program 'Wielton Finance' działa w systemie wspomagania zakupu naczep przez klienta, działa także pakiet assistance dla naczep sprzedawanych w systemie wielton service"
-			],
-			"zarzad": [
-			  "Włodzimierz Masłowski",
-			  "Mariusz Golec",
-			  "Paweł Gońda"
-			],
-			"akcjonariat": [
-			   {"holder": "IPOPEMA I FIZAN", "share": 40.4},
-			   {"holder": "Jakub Prozner", "share": 16.00},
-			   {"holder": "Łukasz Tylkowski", "share": 12.7},
-			   {"holder": "Mariusz Szataniak", "share": 6.7},
-			   {"holder": "Paweł Szataniak", "share": 6.7},
-			   {"holder": "Pozostali", "share": 17.5}
-			],
-			"cena": [
-			  {"month": 1,  "value": 1.49},
-			  {"month": 2,  "value": 1.41},
-			  {"month": 3,  "value": 1.61},
-			  {"month": 4,  "value": 1.67},
-			  {"month": 5,  "value": 1.66},
-			  {"month": 6,  "value": 2.81},
-			  {"month": 7,  "value": 3.05},
-			  {"month": 8,  "value": 3.97},
-			  {"month": 9,  "value": 4.01},
-			  {"month": 10, "value": 3.81},
-			  {"month": 11, "value": 3.31},
-			  {"month": 12, "value": 3.30}
-			]
-		  },
-		  {
-			"year": 2008,
-			"incomes": "368435",
-			"net_profit": "36176",
-			"operative_profit": "53589",
-			"liczba_akcji": "60375",
-			"zadluzenie": "145938",
-			"należnosci": "",
-			"zobowiazania": "",
-			"acc_value": "2.90",
-			"dividend": "0.22",
-			"koszty_zarzadu": "8822",
-			"events": [
-			  "Wielton obiera kierunek na wschód, we wrześniu 2008 nastąpiło zarejestrowanie spółki Wielton Vostok Sp. z o.o. - celem spółki jest zwiekszanie sprzedaży w Rosji oraz zapewnienie serwisu",
-			  "Z uwagi na trudny rok w branży zredukowano zatrudnienie o 25%, dalsze działania restrukturyzacyjne będą miały na celu zwiekszyć udział sprzedaży i rozwijać inne segmenty"
-			],
-			"zarzad": [
-			  "Włodzimierz Masłowski",
-			  "Mariusz Golec",
-			  "Paweł Gońda"
-			],
-			"akcjonariat": [
-			   {"holder":"IPOPEMA I FIZAN", "share": 41.4},
-			   {"holder":"Jakub Prozner", "share": 16.00},
-			   {"holder":"Łukasz Tylkowski", "share": 2.7},
-			   {"holder":"Mariusz Szataniak", "share": 6.7},
-			   {"holder":"Paweł Szataniak", "share": 6.7},
-			   {"holder":"Pozostali", "share": 16.5}
-			   ],
-			"cena": [
-			  {"month": 1,  "value": 6.07},
-			  {"month": 2,  "value": 7.67},
-			  {"month": 3,  "value": 7.21},
-			  {"month": 4,  "value": 6.92},
-			  {"month": 5,  "value": 6.62},
-			  {"month": 6,  "value": 5.77},
-			  {"month": 7,  "value": 4.64},
-			  {"month": 8,  "value": 5.28},
-			  {"month": 9,  "value": 4.59},
-			  {"month": 10, "value": 2.49},
-			  {"month": 11, "value": 1.99},
-			  {"month": 12, "value": 1.79}
-			]
-		  }
-		]
-	  },
-	  {
-		"name": "FERRO",
-		"ticker": "FRO",
-		"data_debiutu": "02-2008",
-		"cena_debiutu": "5",
-		"2019": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
-		},
-		"2018": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
-		},
-		"2017": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
-		},
-		"2016": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
-		},
-		"2015": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
-		},
-		"2014": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
-		},
-		"2013": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
-		},
-		"2012": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
-		},
-		"2011": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
-		},
-		"2010": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
-		},
-		"2009": {
-		  "incomes": "1000000",
-		  "net_profit": "200",
-		  "operative_profit": "20",
-		  "liczba_akcji": "250000",
-		  "zadluzenie": "20000",
-		  "należnosci": "2000",
-		  "zobowiazania": "40000",
-		  "acc_value": "200000",
-		  "dividend": "0.25",
-		  "koszty_zarzadu": "40000",
-		  "events": [
-			"nawiazanie współpracy z AMAZONEM nr prac nad inteligenta naczepą",
-			"połączenie ze spółką brytyjską",
-			"budowa centrum badawczego ze środków NCBiR"
-		  ],
-		  "zarzad": [
-			"Marcin Golec",
-			"Ktos tam",
-			"Ktos Tam"
-		  ],
-		  "akcjonariat": {
-			"Szamburski": "25%"
-		  },
-		  "cena": {
-			"jan": "12.7",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "",
-			"jun": "",
-			"jul": "",
-			"aug": "",
-			"sep": "",
-			"oct": "",
-			"nov": "",
-			"dec": ""
-		  }
 		}
-	  },
-	  {
-		"name": "TEN SQUARE GAMES",
-		"ticker": "TEN",
-		"data_debiutu": "11-05-2018",
-		"cena_debiutu": "62.00",
-		"2018": {
-		  "incomes": "115258",
-		  "net_profit": "36468",
-		  "operative_profit": "44315",
-		  "liczba_akcji": "7275",
-		  "zadluzenie": "",
-		  "należnosci": "",
-		  "zobowiazania": "",
-		  "acc_value": "5.785",
-		  "dividend": "",
-		  "koszty_zarzadu": "",
-		  "events": [
-			"Ten Square Games, producent i wydawca gier mobilnych oraz przeglądarkowych, zadebiutuje na GPW w piątek, 11 maja - poinformowała spółka w komunikacie.",
-			"Kurs akcji Ten Square Games wzrósł w debiucie o 13,5 proc",
-			"Ten Square Games rozpoczął produkcję dwóch gier na '19; podtrzymuje plany na rynku chińskim"
-		  ],
-		  "zarzad": [
-			"Maciej Popowicz",
-			"Arkadiusz Pernal"
-		  ],
-		  "akcjonariat": {
-			"Maciej Popowicz": "39.21%",
-			"Arkadiusz Pernal": "18.76%",
-			"NN OFE": "7.55%",
-			"Pozostali": "34.47"
-		  },
-		  "cena": {
-			"jan": "",
-			"feb": "",
-			"mar": "",
-			"apr": "",
-			"may": "67.34",
-			"jun": "76.76",
-			"jul": "102.58",
-			"aug": "101.30",
-			"sep": "92.50",
-			"oct": "75.40",
-			"nov": "88.40",
-			"dec": "80.00"
-		  }
-		}
-	  }
 	]
-  }
+}
