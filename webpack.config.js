@@ -2,6 +2,7 @@ const path = require("path");
 const entryPath = "dev/";
 const entryFile = "app.js";
 
+
 module.exports = {
   entry: ['whatwg-fetch', `./${entryPath}/js/${entryFile}`],
   output: {

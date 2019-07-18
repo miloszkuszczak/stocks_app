@@ -1,6 +1,5 @@
 
 import React, { Component } from "react";
-import Select from 'react-select';
 import ReactDOM from "react-dom";
 import {
   HashRouter,
@@ -9,8 +8,8 @@ import {
   Switch,
   NavLink,
 } from 'react-router-dom';
-import Stockdata from '../stocks.json';
-import { Line, Doughnut, Bar } from 'react-chartjs-2';
+import Select from 'react-select';
+import { Dividends, LineGraph, Shares, Results, FinFactor, StockInfo } from './components/stock.js';
 
 
 class Cites extends Component {
@@ -32,150 +31,15 @@ class Cites extends Component {
 }
 
 
-class Shares extends Component {
-  constructor(props) {
-    super(props);
-
-  }
-
-  render() {
-    const chartData = {
-      labels: this.props.holders,
-      datasets: [
-        {
-          data: this.props.shares,
-          backgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            '#000000'
-          ],
-          hoverBackgroundColor: [
-            '#FF6384',
-            '#36A2EB',
-            '#FFCE56',
-            "#FFFFFF"
-          ]
-        }]
-    }
-    return (<div style={{ height: '200px', width: '400px' }}><Doughnut options={{ maintainAspectRatio: false }} data={chartData} /></div>
-    )
-  }
-}
-
-
-class Dividends extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  }
-  render() {
-    const data = {
-      labels: ['Dywidendy', 'Cena debiutu'],
-      datasets: [
-        {
-          label: 'Zwrot z inwestycji',
-          backgroundColor: 'rgba(255,99,132,0.2)',
-          borderColor: 'rgba(255,99,132,1)',
-          borderWidth: 1,
-          hoverBackgroundColor: 'rgba(255,99,132,0.4)',
-          hoverBorderColor: 'rgba(255,99,132,1)',
-          data: [this.props.dividend, this.props.price]
-        }
-      ]
-    };
-
-    return (
-      <div>
-        <h2>Bar Example (custom size)</h2>
-        <Bar
-          data={data}
-          width={100}
-          height={50}
-          options={{
-            maintainAspectRatio: false,
-            scales: {
-              yAxes: [{
-                ticks: {
-                  beginAtZero: true
-                }
-              }]
-            }
-          }}
-
-        />
-      </div>
-    );
-  }
-}
-
-
-class LineGraph extends Component {
+class Header extends Component {
   constructor(props) {
     super(props);
   }
   render() {
-    const chartData = this.props.data.map(x => [x.value]);
-    const chartLabel = this.props.data.map(x => [x.month]);
-    const data = {
-      labels: chartLabel,
-      datasets: [
-        {
-          label: 'Kurs',
-          fill: false,
-          lineTension: 0.1,
-          backgroundColor: 'rgba(75,192,192,0.4)',
-          borderColor: 'rgba(75,192,192,1)',
-          borderCapStyle: 'butt',
-          borderDash: [],
-          borderDashOffset: 0.0,
-          borderJoinStyle: 'miter',
-          pointBorderColor: 'rgba(75,192,192,1)',
-          pointBackgroundColor: '#fff',
-          pointBorderWidth: 3,
-          pointHoverRadius: 5,
-          pointHoverBackgroundColor: 'rgba(75,192,192,1)',
-          pointHoverBorderColor: 'rgba(220,220,220,1)',
-          pointHoverBorderWidth: 2,
-          pointRadius: 1,
-          pointHitRadius: 10,
-          data: chartData,
-        }
-      ]
-    }
-    const lineChart = (
-      <div
-        style={{
-          // width: "400px",
-          height: "100%"
-        }}
-      >
-        <Line data={data} />
-      </div>
-    );
-
-    return (<>
-      {lineChart}
-    </>
-    )
+    return (<>Nazwa spółki: {this.props.stock.name}, {this.props.stock.ticker}, Cena debiutu: {this.props.stock.price_IPO}, Data debiutu: {this.props.stock.date_IPO}, Wyszukaj nową spółkę:</>)
   }
-}
-
-class StockInfo extends Component {
 
 }
-
-class Financial extends Component {
-
-}
-
-class Equites extends Component {
-
-}
-
-
 
 
 class Main extends Component {
@@ -209,64 +73,70 @@ class Main extends Component {
   }
 
 
-
   render() {
+    debugger;
 
     const actualYearData = this.state.stockData.years.filter((elem) => { return elem.year == this.state.selectedYear });
 
     const allDataFromStartToToday = this.state.stockData.years.filter((elem) => { return elem.year <= this.state.selectedYear });
 
-    const dividendsFromIPO = allDataFromStartToToday.map(item => parseFloat(item.dividend)).reduce((a, b) => (a + b));
-    debugger;
-    let shares = actualYearData[0].shareholders.map(x => [x.share]);
-    let holders = actualYearData[0].shareholders.map(x => [x.holder]);
+    const previousYearData = this.state.stockData.years.filter(elem => { return elem.year == this.state.selectedYear - 1 });
 
-    return (<>
+    const dividendsFromIPO = allDataFromStartToToday.map(item => parseFloat(item.dividend)).reduce((a, b) => (a + b));
+
+    const shares = actualYearData[0].shareholders.map(x => [x.share]);
+
+    const holders = actualYearData[0].shareholders.map(x => [x.holder]);
+
+    const info = actualYearData[0].events.map(x => [x]);
+
+    return (<><div className="stick-header"><header><Header stock={this.state.stockData} /></header></div>
       <div className="container">
         <div className="row">
           <div className="col-xs-12">
-            <header>{this.state.stockCompany} </header>
+
           </div>
           <div className="col-xs-3">
-            <div className="element info"> {actualYearData[0].events.map((event, index) => <li key={index}>{event}</li>)} </div>
-          </div>
+            <div className="element info">
+              <>
+                <h2>Informacje</h2>
+                <StockInfo info={info} />
+              </>
+            </div></div>
           <div className="col-xs-6">
             <div className="element">
-              <div style={{ height: '100%' }} ><LineGraph data={actualYearData[0].price} /></div>
+              <LineGraph data={actualYearData[0].price} />
             </div>
           </div>
           <div className="col-xs-3">
-            <div className="element"><div>Dywidenda {actualYearData[0].dividend} PLN </div><div>Stopa dywidendy: {(actualYearData[0].dividend / actualYearData[0].price.map(x => x.value)[9]) * 100 + '%'}
-              <div>Suma dywidend od debiutu: {dividendsFromIPO} PLN</div><div> Stopa zwrótu z samych dywidend od debiutu: {(dividendsFromIPO / this.state.stockData.price_IPO) * 100 + '%'}</div></div></div>
-            <Dividends dividend={dividendsFromIPO} price={this.state.stockData.price_IPO} />
+            <div className="element">
+              <Dividends dividend={dividendsFromIPO} price={this.state.stockData.price_IPO} actualYear={actualYearData[0]} />
+            </div>
+
           </div>
-          <div className="col-xs-6">
-            <div className="element"><div> </div></div>
+          <div className="col-xs-4">
+            <div className="element">
+              <div><FinFactor actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
+            </div>
           </div>
-          <div className="col-xs-6">
-            <div className="element"> <div style={{ height: '100%' }}><Shares shares={shares} holders={holders} /></div></div>
+          <div className="col-xs-4">
+            <div className="element">
+              <Shares shares={shares} holders={holders} /></div>
           </div>
-          <div className="col-xs-12">
-            <footer><span className="line">
-              {this.state.yearsToShow.length > 0 ? this.state.yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className="circle">{year}</button>) : ""}
-            </span></footer>
+          <div className="col-xs-4">
+            <div className="element">
+              <div><Results actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="stick-footer"><footer><div className="navigation"><span className='line'>{this.state.yearsToShow.length > 0 ? this.state.yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className="circle">{year}</button>) : ""}</span></div></footer>
       </div>
     </>
     )
   }
 }
 
-class FirstView extends Component {
-  render() {
-    return (<>
-      <Cites />
-      <StockSearch />
-    </>)
-
-  }
-}
 
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(0);
@@ -275,6 +145,20 @@ function getRandomIntInclusive(min, max) {
 }
 
 class App extends Component {
+
+  render() {
+    return (<HashRouter>
+      <>
+        <Route exact path='/' component={LandingPage} />
+        <Route path='/main' component={Main} />
+      </>
+    </HashRouter>
+    )
+  }
+}
+
+
+class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -288,6 +172,8 @@ class App extends Component {
       searchable: true,
     }
   }
+
+
 
   componentDidMount() {
     this.setState({
@@ -315,10 +201,11 @@ class App extends Component {
       let options = this.state.stockNames.map(function (stockName) {
         return { value: stockName, label: stockName };
       })
-      return (<>
-        <Cites citeNo={this.state.citeNo} />
+      return (<><div className='centerDiv'>
+
         <div>
           <Select
+            className='selector'
             name="companyNameSelector"
             value={this.state.selectedCompany.value}
             onChange={this.handleChange}
@@ -327,13 +214,13 @@ class App extends Component {
             options={options}
           />
         </div>
+        <Cites citeNo={this.state.citeNo} />
+      </div>
       </>);
     } else {
       return <Main stock={this.state.selectedCompany} stockData={this.state.selectedStockData} />
     }
   }
-
-
 }
 
 
