@@ -69,8 +69,12 @@ class FinFactor extends Component {
     const currAccVal = (parseFloat(this.props.actualYear.acc_value) * this.props.actualYear.equites);
     const prevAccVal = (parseFloat(this.props.previousYear.acc_value) * this.props.previousYear.equites);
     const lastPrice = this.props.actualYear.price.map(x => x.value)[11];
+    const yearBeforePrice = this.props.previousYear.price.map(x => x.value)[11];
     const priceToProfit = parseFloat(lastPrice / (currAccVal / this.props.actualYear.equites)).toFixed(2);
     const priceToValue = parseFloat(lastPrice / (this.props.actualYear.net_profit / this.props.actualYear.equites)).toFixed(2);
+    const prevPriceToProfit = parseFloat(yearBeforePrice / (prevAccVal / this.props.previousYear.equites)).toFixed(2);
+    const prevPriceToValue = parseFloat(yearBeforePrice / (this.props.previousYear.net_profit / this.props.previousYear.equites)).toFixed(2);
+
     return (<><h2>Wskaźniki finansowe</h2>
       <table>
         <thead>
@@ -89,22 +93,22 @@ class FinFactor extends Component {
           <tr>
             <th>C/Z</th>
             <td>{priceToProfit}</td>
-            <td>{'%'}</td>
+            <td>{Math.abs(priceToProfit - prevPriceToProfit) / prevPriceToProfit * 100 + '%'}</td>
           </tr>
           <tr>
             <th>C/WK</th>
             <td>{priceToValue}</td>
-            <td>{'%'}</td>
+            <td>{Math.abs(priceToValue - prevPriceToValue) / prevPriceToValue * 100 + '%'}</td>
           </tr>
           <tr>
             <th>Wskaźnik W. Buffeta</th>
             <td>{(priceToProfit * priceToValue).toFixed(2) > 20 || (priceToProfit * priceToValue).toFixed(2) < 0 ? <span style={{ color: 'orange' }}>{(priceToProfit * priceToValue).toFixed(2)}</span> : <span style={{ color: 'green' }}>{(priceToProfit * priceToValue).toFixed(2)}</span>}</td>
-            <td>{}</td>
+            <td>{Math.abs((prevPriceToProfit * prevPriceToValue) - (priceToProfit * priceToValue)) / (prevPriceToProfit * prevPriceToValue) * 100 + '%'}</td>
           </tr>
           <tr>
             <th>Liczba akcji</th>
             <td>{this.props.actualYear.equites / 1000} tys. szt.</td>
-            <td>{(this.props.actualYear.equites - this.props.previousYear.equites) / 1000} tys. szt.</td>
+            <td>{(this.props.actualYear.equites - this.props.previousYear.equites) / 1000}tys. szt.</td>
           </tr>
         </tbody>
       </table>
@@ -116,7 +120,6 @@ class FinFactor extends Component {
 class Shares extends Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
@@ -136,7 +139,7 @@ class Shares extends Component {
           ]
         }]
     }
-    return (<div><h2>Akcjonariat</h2><Doughnut width={100} options={{ maintainAspectRatio: false }} data={chartData} /></div>
+    return (<div><h2>Akcjonariat</h2><Doughnut options={{ maintainAspectRatio: true }} data={chartData} /></div>
     )
   }
 }
@@ -239,19 +242,22 @@ class LineGraph extends Component {
   }
 }
 
+function jsUcfirst(paragraph) {
+  debugger;
+  let firstWord = paragraph[0].split(' ')[0];
+  return firstWord.charAt(0).toUpperCase() + paragraph[0].slice(1);
+}
+
 
 class StockInfo extends Component {
   constructor(props) {
     super(props);
   }
-
-
   render() {
-    debugger;
     return (<>
       <table>
         <tbody>
-          {this.props.info.map((event, index) => <tr key={index}><td>{event}</td></tr>)}
+          {this.props.info.map((event, index) => <tr key={index}><td><p>{jsUcfirst(event)}</p></td></tr>)}
         </tbody>
       </table>
     </>)
