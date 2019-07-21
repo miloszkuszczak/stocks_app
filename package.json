@@ -1,26 +1,47 @@
 {
-  "name": "package.json",
+  "name": "WRO_FER_W_09_REACT_React",
   "version": "1.0.0",
-  "description": "nj24",
+  "description": "<img src=\"http://coderslab.pl/img/coderslab-logo.png\" align=\"right\" width=\"400\"/>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --hot -d",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodersLab-core/FER_SCRUM_LAB.git"
+    "url": "git+https://github.com/miloszkuszczak/WRO_FER_W_09_REACT_React.git"
   },
-  "author": "Michał T",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodersLab-core/FER_SCRUM_LAB/issues"
+    "url": "https://github.com/miloszkuszczak/WRO_FER_W_09_REACT_React/issues"
   },
-  "homepage": "https://github.com/CodersLab-core/FER_SCRUM_LAB#readme",
+  "homepage": "https://github.com/miloszkuszczak/WRO_FER_W_09_REACT_React#readme",
   "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
     "browser-sync": "^2.26.0",
     "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "gulp": "^4.0.0",
+    "react": "^16.8.4",
+    "react-chartjs-2": "^2.7.6",
+    "react-charts": "^2.0.0-alpha.12",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^5.0.1",
+    "react-select": "^3.0.4",
+    "react-table": "^6.10.0",
+    "whatwg-fetch": "^3.0.0"
   }
 }
