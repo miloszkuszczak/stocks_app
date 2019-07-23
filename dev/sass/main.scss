@@ -9,18 +9,21 @@
 @import "components/global";
 @import "fonts/nunito";
 
-$min_border: 320px;
 
 
 .row {
    display: flex;
    flex-wrap: wrap;
    margin-top: -1rem;
-   margin: -1rem -0.5rem 0 -0.5rem;
+   margin: 0 auto; //-1rem -0.5rem 0 -0.5rem;
 }
 
 
-@media (min-width: $min_border) {
+@media (min-width: $small) {
+.container {
+   width: 100%;
+}
+
 
 @for $i from 1 through 12 {
    .col-xs-#{$i} {
@@ -32,11 +35,39 @@ $min_border: 320px;
    }
 }
 
+
+@media (min-width: $medium) {
+.container {
+   width: 90%;
+}
+   @for $i from 1 through 12 {
+      .col-m-#{$i} {
+          margin-top: 1rem;
+          padding: 0 0.5rem;
+          width: 100% * ($i / 12);
+        
+         }
+      }
+   }
+
+@media (min-width: $large) {
+      .container {
+         width: $large;
+      }
+         @for $i from 1 through 12 {
+            .col-l-#{$i} {
+                margin-top: 1rem;
+                padding: 0 0.5rem;
+                width: 100% * ($i / 12);
+              
+               }
+            }
+}
+
 .container {
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  width: 1400px;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
 }
 
 
@@ -44,6 +75,8 @@ $min_border: 320px;
 body {
    font-family: 'nunitoregular',Arial, Helvetica, sans-serif;
    background-color: #F9F9F9;
+   overflow:auto;
+   font-size: 14px;
   
 }
 
@@ -62,7 +95,7 @@ body {
 
 .stick-header{
    background-color: #0A397C;
-   height: 70px;
+   height: 5rem;
    position: fixed;
    top: 0;
    width: 100%;
@@ -74,7 +107,7 @@ body {
 header {
    color: white;
    margin: 0 auto;
-   width:1400px;
+   width: $large;
    height:100%;
    display: flex;
    align-items: center;
@@ -83,20 +116,23 @@ header {
   
    }
    .inHeader {
-      width: 200px;
+      width: 14rem;
       color: grey;
    }
 }
 
+footer {
+width: 100%;
+position: fixed;
+bottom: 0;
+height: 5rem;
+display:flex;
+align-items: center;
+justify-content: center;
 .stick-footer {
-   height:100px;
-   width: 100%;
-   position: fixed;
-   bottom:0;
-      footer {
-         width: 1400px;
-         margin: 0 auto;
-         height: 100%;
+   width: $large;
+   margin: 0 auto;
+   height: 100%;
    }
 }
 
@@ -142,6 +178,7 @@ section {
    // left: 50%;
    h1, h2, h3 {
       color: white;
+      font-family: 'nunitolight', Arial, Helvetica, sans-serif;
    }
    .selector {
       width:200px;
@@ -151,6 +188,7 @@ section {
 
 .info {
    overflow: auto;
+   line-height: 1.5rem;
    &::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #F5F5F5;
@@ -174,6 +212,8 @@ section {
    display:flex;
    align-items: center;
    justify-content: center;
+   flex-direction: row-reverse;
+   margin: 0 auto;
    background: rgb(255,255,255);
    background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(246,246,246) 47%, rgb(237,237,237) 100%);
    background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%,rgb(246,246,246) 47%,rgb(237,237,237) 100%);
@@ -182,14 +222,7 @@ section {
    background-color: #9BB5FF;
    height: 100%;
    border-radius: 2px;
-
-   .line {
-      width: 90%;
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row-reverse;
-   }
+}
 
       button.circle {
          -webkit-transition: all 200ms ease;
@@ -225,5 +258,4 @@ section {
             border: 1px solid white;
          }
       }
-   }
 

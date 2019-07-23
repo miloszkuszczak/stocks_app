@@ -19,7 +19,7 @@ import { StockInfo } from './components/stockinfo.js';
 import { Cites, Header } from './components/layout.js';
 import randomCite from './components/layout.js';
 
-const rand = randomCite();
+
 
 
 class LandingPage extends Component {
@@ -55,6 +55,7 @@ class LandingPage extends Component {
 
 
   componentDidMount() {
+    const rand = randomCite();
     fetch(`https://api.myjson.com/bins/gm49r`)
       .then(res => res.json())
       .then(data => {
@@ -137,6 +138,11 @@ class Main extends Component {
     }
   }
 
+  componentWillMount() {
+    document.body.style.overflow = "auto";
+    document.body.style.position = "absolute";
+  }
+
   componentWillReceiveProps(newProps) {
     debugger;
     this.setState({
@@ -179,45 +185,42 @@ class Main extends Component {
     return (<>
       <div className="container">
         <div className="row">
-          <div className="col-xs-12">
-
-          </div>
-          <div className="col-xs-3">
+          <div className="col-xs-12 col-m-4 col-l-3">
             <div className="element info">
               <>
                 <h2>Informacje</h2>
                 <StockInfo info={info} />
               </>
             </div></div>
-          <div className="col-xs-6">
+          <div className="col-xs-12 col-m-8 col-l-6">
             <div className="element">
               <LineGraph data={actualYearData[0].price} />
             </div>
           </div>
-          <div className="col-xs-3">
+          <div className="col-xs-12 col-m-6 col-l-3">
             <div className="element">
               <Dividends dividend={dividendsFromIPO} price={this.props.stockData[0].price_IPO} actualYear={actualYearData[0]} />
             </div>
-
           </div>
-          <div className="col-xs-4 col-m-12">
+          <div className="col-xs-7 col-m-6 col-l-4">
             <div className="element">
               <div><FinFactor actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
             </div>
           </div>
-          <div className="col-xs-4">
+          <div className="col-xs-5 col-m-6 col-l-4">
             <div className="element">
               <Shares shares={shares} holders={holders} /></div>
           </div>
-          <div className="col-xs-4">
+          <div className="col-xs-12 col-m-6 col-l-4">
             <div className="element">
               <div><Results actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
             </div>
           </div>
         </div>
       </div>
-      <div className="stick-footer"><footer><div className="navigation"><span className='line'>{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className="circle">{year}</button>) : ""}</span></div></footer>
-      </div>
+      <footer>
+        <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className="circle">{year}</button>) : ""}</div></div>
+      </footer>
     </>
     )
   }
