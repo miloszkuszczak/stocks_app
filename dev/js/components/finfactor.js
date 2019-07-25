@@ -35,17 +35,17 @@ class FinFactor extends Component {
                     <tr>
                         <th>C/Z</th>
                         <td>{priceToProfit}</td>
-                        <td>{Math.abs(priceToProfit - prevPriceToProfit) / prevPriceToProfit * 100 + '%'}</td>
+                        <td>{(Math.abs(priceToProfit - prevPriceToProfit) / prevPriceToProfit * 100).toFixed(2) + '%'}</td>
                     </tr>
                     <tr>
                         <th>C/WK</th>
                         <td>{priceToValue}</td>
-                        <td>{Math.abs(priceToValue - prevPriceToValue) / prevPriceToValue * 100 + '%'}</td>
+                        <td>{(Math.abs(priceToValue - prevPriceToValue) / prevPriceToValue * 100).toFixed(2) + '%'}</td>
                     </tr>
                     <tr>
                         <th>Wskaźnik W. Buffeta</th>
                         <td>{(priceToProfit * priceToValue).toFixed(2) > 20 || (priceToProfit * priceToValue).toFixed(2) < 0 ? <span style={{ color: 'orange' }}>{(priceToProfit * priceToValue).toFixed(2)}</span> : <span style={{ color: 'green' }}>{(priceToProfit * priceToValue).toFixed(2)}</span>}</td>
-                        <td>{Math.abs((prevPriceToProfit * prevPriceToValue) - (priceToProfit * priceToValue)) / (prevPriceToProfit * prevPriceToValue) * 100 + '%'}</td>
+                        <td>{(Math.abs((prevPriceToProfit * prevPriceToValue) - (priceToProfit * priceToValue)) / (prevPriceToProfit * prevPriceToValue) * 100).toFixed(2) + '%'}</td>
                     </tr>
                     <tr>
                         <th>Liczba akcji</th>

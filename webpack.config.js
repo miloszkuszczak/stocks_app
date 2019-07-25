@@ -15,6 +15,9 @@ module.exports = {
     compress: true,
     port: 3001
   },
+  node: {
+    fs: 'empty'
+  },
   module: {
     rules: [
       {

@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import {
@@ -18,9 +17,9 @@ import { FinFactor } from './components/finfactor.js';
 import { StockInfo } from './components/stockinfo.js';
 import { Cites, Header } from './components/layout.js';
 import randomCite from './components/layout.js';
+// const iex = require('iexcloud_api_wrapper');
 
-
-
+// require('dotenv').config();
 
 class LandingPage extends Component {
   constructor(props) {
@@ -53,25 +52,19 @@ class LandingPage extends Component {
   }
 
 
-
   componentDidMount() {
     const rand = randomCite();
-    fetch(`https://api.myjson.com/bins/gm49r`)
+    // fetch(`https://cloud.iexapis.com/stable/ref-data/region/US/symbols?token=pk_789b38e7087c425081f92a10ec76bfd3`) - pobiera wszystkei symbole z US
+    fetch(`https://cloud.iexapis.com/stable/stock/market/list/mostactive?token=pk_789b38e7087c425081f92a10ec76bfd3`)
       .then(res => res.json())
       .then(data => {
-        let stockNames = data.stocks.map(x => x.name);
-        let sessionCompany = sessionStorage.getItem("sessionSelectedCompany");
-        let selectedStockData = "";
+        debugger;
+        let stockNames = data.map(function (x) {
+          return { value: x.symbol, label: x.companyName };
+        })
         let randomCite = rand;
-        if (sessionCompany) {
-          selectedStockData = data.stocks.filter(x => x.name === sessionCompany);
-        }
-
         this.setState({
           stockNames,
-          stockData: data,
-          selectedCompany: sessionCompany ? sessionCompany : "",
-          selectedStockData: selectedStockData ? selectedStockData : "",
           author: randomCite.author,
           cite: randomCite.cite,
         });
@@ -79,52 +72,113 @@ class LandingPage extends Component {
   }
 
 
+  // componentDidMount() {
+  //   const rand = randomCite();
+  //   fetch(`https://api.myjson.com/bins/gm49r`)
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       let stockNames = data.stocks.map(x => x.name);
+  //       let sessionCompany = sessionStorage.getItem("sessionSelectedCompany");
+  //       let selectedStockData = "";
+  //       let randomCite = rand;
+  //       if (sessionCompany) {
+  //         selectedStockData = data.stocks.filter(x => x.name === sessionCompany);
+  //       }
+
+  //       this.setState({
+  //         stockNames,
+  //         stockData: data,
+  //         selectedCompany: sessionCompany ? sessionCompany : "",
+  //         selectedStockData: selectedStockData ? selectedStockData : "",
+  //         author: randomCite.author,
+  //         cite: randomCite.cite,
+  //       });
+  //     });
+  // }
+
 
   handleChange = selectedCompany => {
     sessionStorage.setItem('sessionSelectedCompany', selectedCompany.value);
-    let selectedStockData = this.state.stockData.stocks.filter(x => x.name === selectedCompany.value);
-    this.setState({ selectedCompany: selectedCompany.value, selectedStockData });
+    // fetch(`https://cloud.iexapis.com/stable/stock/` + selectedCompany.value + `/quote?token=pk_789b38e7087c425081f92a10ec76bfd3`)
+    /stock/aapl / news / last / 1
+    fetch(`https://cloud.iexapis.com/stable/stock/` + selectedCompany.value + `/chart/max?token=pk_789b38e7087c425081f92a10ec76bfd3`)// dane za max lat
+      .then(res => res.json())
+      .then(data => {
+        debugger;
+        let aaa = new Stock();
+        aaa.id = data.asdasd;
+
+
+
+        //mapowanie data na stocks json
+
+        // let selectedStockData = this.state.stockData.stocks.filter(x => x.name === selectedCompany.value);
+        this.setState({ selectedCompany: aaa.label });
+      });
+
   };
 
-  render() {
-    if (!this.state.stockData) {
-      return (<><Lines /></>);
-    } else {
-      let options = this.state.stockNames.map(function (stockName) {
-        return { value: stockName, label: stockName };
-      })
+  // handleChange = selectedCompany => {
+  //   sessionStorage.setItem('sessionSelectedCompany', selectedCompany.value);
+  //   let selectedStockData = this.state.stockData.stocks.filter(x => x.name === selectedCompany.value);
+  //   this.setState({ selectedCompany: selectedCompany.value, selectedStockData });
+  // };
+class StockData {
+  date: Date,
+  value: int
+}
 
-      if (!this.state.selectedCompany && !this.state.selectedStockData) {
-        return (<>
-          <div className="entryImg">
+class Sock {
+  id: int,
+  name: string,
+  history: Array(StockData),
+    constructor(id){
+  this.id = id;
+}
+}
 
-            <div className='centerDiv'>
-              <div>
-                <Select
-                  className='selector'
-                  name="companyNameSelector"
-                  placeholder='Wybierz spółkę'
-                  value={this.state.selectedCompany.value}
-                  onChange={this.handleChange}
-                  clearable={this.state.clearable}
-                  searchable={this.state.searchable}
-                  options={options}
-                />
-              </div>
+
+
+render() {
+  debugger;
+  if (this.state.stockNames.length == 0) {
+    return (<><Lines /></>);
+  } else {
+    let options = this.state.stockNames;
+    debugger;
+    if (!this.state.selectedCompany) {
+      return (<>
+        <div className="entryImg">
+          <div className="centerDiv">
+            <div className="backDiv"></div>
+            <div>
+              <Select
+                className='selector'
+                name="companyNameSelector"
+                placeholder='Wybierz spółkę'
+                value={this.state.selectedCompany.value}
+                onChange={this.handleChange}
+                clearable={this.state.clearable}
+                searchable={this.state.searchable}
+                options={options}
+              />
               <Cites author={this.state.author} cite={this.state.cite} />
             </div>
           </div>
-        </>);
-      } else {
-        debugger;
-        let currOptions = options.filter(item => { return item.value != sessionStorage.getItem('sessionSelectedCompany') })
-        return (<><div className="stick-header"><header><Header stock={this.state.selectedStockData[0]} options={currOptions} handler={this.handler} /></header></div>
-          <Main stock={this.state.selectedCompany} stockData={this.state.selectedStockData} />
-        </>)
-      }
+        </div>
+      </>);
+    } else {
+      debugger;
+      let currOptions = options.filter(item => { return item.value != sessionStorage.getItem('sessionSelectedCompany') })
+      return (<><div className="stick-header"><header><Header stock={this.state.selectedStockData[0]} options={currOptions} handler={this.handler} /></header></div>
+        <Main stock={this.state.selectedCompany} stockData={this.state.selectedStockData} />
+      </>)
     }
   }
 }
+}
+
+const currYear = new Date().getFullYear();
 
 
 class Main extends Component {
@@ -138,10 +192,10 @@ class Main extends Component {
     }
   }
 
-  componentWillMount() {
-    document.body.style.overflow = "auto";
-    document.body.style.position = "absolute";
-  }
+  // componentWillMount() {
+  //   document.body.style.overflow = "auto";
+  //   document.body.style.position = "absolute";
+  // }
 
   componentWillReceiveProps(newProps) {
     debugger;
@@ -202,24 +256,24 @@ class Main extends Component {
               <Dividends dividend={dividendsFromIPO} price={this.props.stockData[0].price_IPO} actualYear={actualYearData[0]} />
             </div>
           </div>
-          <div className="col-xs-7 col-m-6 col-l-4">
+          {currYear == actualYear ? null : <div className="col-xs-7 col-m-6 col-l-4">
             <div className="element">
               <div><FinFactor actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
             </div>
-          </div>
+          </div>}
           <div className="col-xs-5 col-m-6 col-l-4">
             <div className="element">
               <Shares shares={shares} holders={holders} /></div>
           </div>
-          <div className="col-xs-12 col-m-6 col-l-4">
+          {currYear == actualYear ? null : <div className="col-xs-12 col-m-6 col-l-4">
             <div className="element">
               <div><Results actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
             </div>
-          </div>
+          </div>}
         </div>
-      </div>
-      <footer>
-        <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className="circle">{year}</button>) : ""}</div></div>
+      </div>}
+        <footer>
+        <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? 'currYear' : "circle"}>{year == currYear ? 'O firmie' : year}</button>) : ""}</div></div>
       </footer>
     </>
     )

@@ -10,21 +10,46 @@
 @import "fonts/nunito";
 
 
-
+html, body {
+   font-size: $font_size;
+}
 .row {
    display: flex;
    flex-wrap: wrap;
    margin-top: -1rem;
    margin: 0 auto; //-1rem -0.5rem 0 -0.5rem;
 }
-
+.element {
+   background-color: #f1f1f2;
+   height: 2rem;
+   height:400px;
+   box-shadow: 2px 2px 3px lightgrey;
+   border-radius: 4px;
+   padding: 5px;
+   -webkit-transition: all 500ms ease;
+   -moz-transition: all 500ms ease;
+   -ms-transition: all 500ms ease;
+   -o-transition: all 500ms ease;
+   transition: all 500ms ease;
+   h2 {
+      padding: 0.5rem;
+   }
+   info {
+      height: 400px;
+   }
+   &:hover {
+      background-color: #F9F9F9;
+      box-shadow: 4px 4px 5px lightgrey;
+   }
+}
 
 @media (min-width: $small) {
 .container {
    width: 100%;
 }
-
-
+div.element.info {
+   height: 100px;
+}
 @for $i from 1 through 12 {
    .col-xs-#{$i} {
        margin-top: 1rem;
@@ -40,6 +65,10 @@
 .container {
    width: 90%;
 }
+div.element.info {
+   height: 400px;
+}
+
    @for $i from 1 through 12 {
       .col-m-#{$i} {
           margin-top: 1rem;
@@ -75,8 +104,7 @@
 body {
    font-family: 'nunitoregular',Arial, Helvetica, sans-serif;
    background-color: #F9F9F9;
-   overflow:auto;
-   font-size: 14px;
+   
   
 }
 
@@ -114,10 +142,11 @@ header {
    justify-content: space-around;
    border-radius: 2px;
   
-   }
+   
    .inHeader {
       width: 14rem;
       color: grey;
+      }
    }
 }
 
@@ -137,23 +166,7 @@ justify-content: center;
 }
 
 
-.element {
-   background-color: #f1f1f2;
-   height: 2rem;
-   min-height:400px;
-   box-shadow: 2px 2px 3px lightgrey;
-   border-radius: 4px;
-   padding: 5px;
-   -webkit-transition: all 500ms ease;
-   -moz-transition: all 500ms ease;
-   -ms-transition: all 500ms ease;
-   -o-transition: all 500ms ease;
-   transition: all 500ms ease;
-   &:hover {
-      background-color: #F9F9F9;
-      box-shadow: 4px 4px 5px lightgrey;
-   }
-}
+
 
 section {
    background-color: #f4ff7c;
@@ -165,8 +178,18 @@ section {
    background-color: #58c2e9;
    height: 15rem;
 }
-
+.backDiv{
+   position: absolute;
+   bottom: -6rem;
+   left:-4rem;
+   width: 100rem;
+   height: 15rem;
+   background-color: black;
+   opacity: 0.4;
+   z-index: -1;
+}
 .centerDiv {
+   position: relative;
    width: 400px;
    border-radius: 5px;
    padding: 10px;
@@ -176,12 +199,21 @@ section {
    // margin-left: -200px;
    // top: 50%;
    // left: 50%;
+
+   z-index: 2;
+   
    h1, h2, h3 {
+      z-index: 3;
+      line-height: 2rem;
+      padding-top: 1rem;
+      width: 40rem;
       color: white;
       font-family: 'nunitolight', Arial, Helvetica, sans-serif;
    }
    .selector {
       width:200px;
+      z-index: 4;
+      padding-bottom: 1rem;
    }
 }
 
@@ -257,5 +289,11 @@ section {
             box-shadow: 1px 1px 1px 1px lightgray;
             border: 1px solid white;
          }
+      
       }
-
+      button.currYear {
+         width: 5em;
+         height:5em;
+         margin: 1em;
+         color: pink;
+      }
