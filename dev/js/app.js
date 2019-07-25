@@ -18,6 +18,7 @@ import { FinFactor } from './components/finfactor.js';
 import { StockInfo } from './components/stockinfo.js';
 import { Cites, Header } from './components/layout.js';
 import randomCite from './components/layout.js';
+// import { Main } from './components/main.js';
 
 
 
@@ -127,6 +128,8 @@ class LandingPage extends Component {
 }
 
 
+const currYear = new Date().getFullYear();
+
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -204,7 +207,7 @@ class Main extends Component {
           </div>
           <div className="col-xs-7 col-m-6 col-l-4">
             <div className="element">
-              <div><FinFactor actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
+              {currYear == actualYear ? null : <div><FinFactor actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>}
             </div>
           </div>
           <div className="col-xs-5 col-m-6 col-l-4">
@@ -213,13 +216,13 @@ class Main extends Component {
           </div>
           <div className="col-xs-12 col-m-6 col-l-4">
             <div className="element">
-              <div><Results actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
+              {currYear == actualYear ? null : <div><Results actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>}
             </div>
           </div>
         </div>
       </div>
       <footer>
-        <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className="circle">{year}</button>) : ""}</div></div>
+        <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle"}>{year == currYear ? 'Ogólnie' : year}</button>) : ""}</div></div>
       </footer>
     </>
     )
