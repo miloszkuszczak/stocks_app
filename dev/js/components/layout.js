@@ -24,27 +24,7 @@ class Search extends Component {
     }
 }
 
-function getRandomIntInclusive(min, max) {
-    min = Math.ceil(0);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-const randomCite = () => {
-    const cite = [
-        { author: "Warren Buffet", cites: ["Na giełdzie kapitał płynie od aktywnych do cierpliwych", "Wall Street to miejsce, gdzie ludzie przyjeżdżający limuzynami proszą o rady tych przyjeżdżających metrem",] },
-        { author: "dr Alexander Elder", cites: ["Rynek potrafi być dłużej irracjonalny niż inwestor wypłacalny", "Trend is your friend"] },
-        { author: "George Soros", cites: ["Bitcoin jest super", "Lubię oszukiwać ludzi na spekulacji"] },
-        { author: "Albert Rokicki", cites: ['Pierwszy dzień tygodnia wskazuje fałszywy kierunek tygodnia', 'Z inwestorskim pozdrowieniem'] }];
 
-    const citesArray = cite.map(element => [element.author, element.cites]);
-    const authorNo = getRandomIntInclusive(0, citesArray.length - 1);
-    const exactCite = citesArray[authorNo][1].map(element => element);
-    return ({
-        author: citesArray[authorNo][0],
-        cite: exactCite[getRandomIntInclusive(0, exactCite.length - 1)],
-    });
-}
-export default randomCite;
 
 class Header extends Component {
     constructor(props) {

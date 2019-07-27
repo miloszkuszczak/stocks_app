@@ -19,6 +19,11 @@
 }
 
 
+[class*="col-"] {
+   /*Mobile first: set the width to 100% by default*/
+   width: 100%;
+ }
+
 @media (min-width: $small) {
 .container {
    width: 100%;
@@ -38,7 +43,7 @@
 
 @media (min-width: $medium) {
 .container {
-   width: 90%;
+   width: 100%;
 }
    @for $i from 1 through 12 {
       .col-m-#{$i} {
@@ -113,7 +118,14 @@ header {
    align-items: center;
    justify-content: space-around;
    border-radius: 2px;
-  
+   h1 {
+      width: 25%;
+      text-align: center;
+   }
+   h2, h3, .selector {
+      width: 18%;
+      text-align: left;
+   }
    }
    .inHeader {
       width: 14rem;
@@ -152,6 +164,9 @@ justify-content: center;
    &:hover {
       background-color: #F9F9F9;
       box-shadow: 4px 4px 5px lightgrey;
+   }
+   h2 {
+      padding: 0.5rem;
    }
 }
 

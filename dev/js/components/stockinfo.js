@@ -1,5 +1,7 @@
 
 import React, { Component } from "react";
+import { capitalFirst } from './utils.js'
+
 
 
 class StockInfo extends Component {
@@ -17,11 +19,7 @@ class StockInfo extends Component {
   }
 }
 
-function capitalFirst(paragraph) {
-  debugger;
-  let firstWord = paragraph[0].split(' ')[0];
-  return firstWord.charAt(0).toUpperCase() + paragraph[0].slice(1);
-}
+
 
 
 export { StockInfo };

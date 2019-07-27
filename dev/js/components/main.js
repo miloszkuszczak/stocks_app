@@ -1,11 +1,15 @@
 
 import React, { Component } from "react";
-import { Results } from './components/results.js';
-import { LineGraph } from './components/linegraph.js';
-import { Shares } from './components/shares.js';
-import { Dividends } from './components/dividends.js';
-import { FinFactor } from './components/finfactor.js';
-import { StockInfo } from './components/stockinfo.js';
+import { Results } from './results.js';
+import { LineGraph } from './linegraph.js';
+import { Shares } from './shares.js';
+import { Dividends } from './dividends.js';
+import { FinFactor } from './finfactor.js';
+import { StockInfo } from './stockinfo.js';
+import { About } from './about.js';
+import { Ceo } from './ceo.js';
+
+const currYear = new Date().getFullYear();
 
 class Main extends Component {
     constructor(props) {
@@ -62,47 +66,92 @@ class Main extends Component {
         const holders = actualYearData[0].shareholders.map(x => [x.holder]);
         const info = actualYearData[0].events.map(x => [x]);
 
-        return (<>
-            <div className="container">
-                <div className="row">
-                    <div className="col-xs-12 col-m-4 col-l-3">
-                        <div className="element info">
-                            <>
-                                <h2>Informacje</h2>
-                                <StockInfo info={info} />
-                            </>
-                        </div></div>
-                    <div className="col-xs-12 col-m-8 col-l-6">
-                        <div className="element">
-                            <LineGraph data={actualYearData[0].price} />
+
+        if (currYear == actualYear) {
+
+
+            return (<>
+                <div className="container">
+                    <div className="row">
+
+                        <div className="col-xs-12 col-m-12 col-l-9">
+                            <div className="element info">
+                                <h2>Opis spółki</h2>
+                                <About about={this.props.stockData[0].about} />
+                            </div></div>
+                        <div className="col-xs-12 col-m-6 col-l-3">
+                            <div className="element">
+                                <Dividends dividend={dividendsFromIPO} price={this.props.stockData[0].price_IPO} actualYear={actualYearData[0]} />
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-xs-12 col-m-6 col-l-3">
-                        <div className="element">
-                            <Dividends dividend={dividendsFromIPO} price={this.props.stockData[0].price_IPO} actualYear={actualYearData[0]} />
+                        <div className="col-xs-12 col-m-6 col-l-3">
+                            <div className="element">
+                                <LineGraph data={actualYearData[0].price} />
+
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-xs-7 col-m-6 col-l-4">
-                        <div className="element">
-                            <div><FinFactor actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
+                        <div className="col-xs-7 col-m-6 col-l-4">
+                            <div className="element">
+                                <Ceo board={actualYearData[0].board.length == 0 ? 'Brak informacji o władzach' : actualYearData[0].board} />
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-xs-5 col-m-6 col-l-4">
-                        <div className="element">
-                            <Shares shares={shares} holders={holders} /></div>
-                    </div>
-                    <div className="col-xs-12 col-m-6 col-l-4">
-                        <div className="element">
-                            <div><Results actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
+                        <div className="col-xs-5 col-m-6 col-l-4">
+                            <div className="element">
+                                <Shares shares={shares} holders={holders} /></div>
+                        </div>
+                        <div className="col-xs-12 col-m-6 col-l-4">
+                            <div className="element">
+                                {currYear == actualYear ? null : <div><Results actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <footer>
-                <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className="circle">{year}</button>) : ""}</div></div>
-            </footer>
-        </>
-        )
+                <footer>
+                    <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle"}>{year == currYear ? 'Ogólnie' : year}</button>) : ""}</div></div>
+                </footer>
+            </>
+            )
+        } else {
+            return (<>
+                <div className="container">
+                    <div className="row">
+
+                        <div className="col-xs-12 col-m-4 col-l-3">
+                            <div className="element info">
+                                <h2>Informacje</h2>
+                                <StockInfo info={info} />
+                            </div></div>
+                        <div className="col-xs-12 col-m-8 col-l-6">
+                            <div className="element">
+                                <LineGraph data={actualYearData[0].price} />
+                            </div>
+                        </div>
+                        <div className="col-xs-12 col-m-6 col-l-3">
+                            <div className="element">
+                                <Dividends dividend={dividendsFromIPO} price={this.props.stockData[0].price_IPO} actualYear={actualYearData[0]} />
+                            </div>
+                        </div>
+                        <div className="col-xs-7 col-m-6 col-l-4">
+                            <div className="element">
+                                <div><FinFactor actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
+                            </div>
+                        </div>
+                        <div className="col-xs-5 col-m-6 col-l-4">
+                            <div className="element">
+                                <Shares shares={shares} holders={holders} /></div>
+                        </div>
+                        <div className="col-xs-12 col-m-6 col-l-4">
+                            <div className="element">
+                                <div><Results actualYear={actualYearData[0]} previousYear={previousYearData.length !== 0 ? previousYearData[0] : actualYearData[0]} /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle"}>{year == currYear ? 'Ogólnie' : year}</button>) : ""}</div></div>
+                </footer>
+            </>)
+        }
     }
 }
 

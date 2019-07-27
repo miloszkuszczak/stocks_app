@@ -33,6 +33,7 @@
     "gulp-sourcemaps": "^2.6.4"
   },
   "dependencies": {
+    "accounting-js": "^1.1.1",
     "chart.js": "^2.8.0",
     "gulp": "^4.0.0",
     "react": "^16.8.4",
