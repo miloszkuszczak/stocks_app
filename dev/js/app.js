@@ -108,7 +108,6 @@ class LandingPage extends Component {
           </div>
         </>);
       } else {
-        debugger;
         let currOptions = options.filter(item => { return item.value != sessionStorage.getItem('sessionSelectedCompany') })
         return (<><div className="stick-header"><header><Header stock={this.state.selectedStockData[0]} options={currOptions} handler={this.handler} /></header></div>
           <Main stock={this.state.selectedCompany} stockData={this.state.selectedStockData} />
