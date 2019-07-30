@@ -14,11 +14,10 @@ class ProfitGraph extends Component {
         const labels = rev_data.map(item => [parseFloat(item.year)]);
 
         const data = {
-            //labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
             datasets: [{
                 label: 'Zysk operacyjny',
                 type: 'line',
-                data: profits,
+                data: incomes,
                 fill: false,
                 borderColor: '#EC932F',
                 backgroundColor: 'rgba(184,63,191,0.63)',
@@ -30,7 +29,7 @@ class ProfitGraph extends Component {
             }, {
                 type: 'bar',
                 label: 'Przychody',
-                data: incomes,
+                data: profits,
                 fill: false,
                 backgroundColor: 'rgba(133,191,63,0.63)',
                 borderColor: '#0099FF',
