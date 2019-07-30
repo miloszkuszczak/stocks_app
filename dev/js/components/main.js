@@ -102,7 +102,7 @@ class Main extends Component {
 
                         <div className="col-xs-12 col-m-6 col-l-4">
                             <div className="element">
-                                <Summary data={allDataFromStartToToday} priceIPO={this.props.stockData[0].price_IPO} />
+                                <Summary dividend={dividendsFromIPO} data={allDataFromStartToToday} priceIPO={this.props.stockData[0].price_IPO} />
                             </div>
                         </div>
 
