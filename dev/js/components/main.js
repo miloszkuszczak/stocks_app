@@ -61,6 +61,7 @@ class Main extends Component {
         const actualYear = this.state.selectedYear;
         const actualYearData = this.props.stockData[0].years.filter((elem) => { return elem.year == actualYear });
         const allDataFromStartToToday = this.props.stockData[0].years.filter((elem) => { return elem.year <= actualYear });
+        const dataForProfitGraph = this.props.stockData[0].years.filter((elem) => { return elem.year < actualYear });
         const previousYearData = this.props.stockData[0].years.filter(elem => { return elem.year == (actualYear - 1) });
         const dividendsFromIPO = allDataFromStartToToday.map(item => parseFloat(item.dividend)).reduce((a, b) => (a + b));
         const shares = actualYearData[0].shareholders.map(x => [x.share]);
@@ -108,13 +109,13 @@ class Main extends Component {
 
                         <div className="col-xs-12 col-m-6 col-l-8">
                             <div className="element">
-                                <ProfitGraph data={allDataFromStartToToday} />
+                                <ProfitGraph data={dataForProfitGraph} />
                             </div>
                         </div>
                     </div>
                 </div>
                 <footer>
-                    <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle pulse"}>{year == currYear ? 'O spółce' : year}</button>) : ""}</div></div>
+                    <div className="stick-footer"><div className="navigation">{yearsToShow.length > 0 ? yearsToShow.map(year => <button key={year} value={year} onClick={e => this.handleClick(e)} className={year == currYear ? "circle currYear" : "circle"}>{year == currYear ? 'O spółce' : year}</button>) : ""}</div></div>
                 </footer>
             </>
             )

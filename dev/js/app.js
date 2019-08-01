@@ -69,7 +69,14 @@ class LandingPage extends Component {
         });
       });
   }
-
+  handleClick(e) {
+    const rand = randomCite();
+    // let randomCite = rand;
+    this.setState({
+      author: rand.author,
+      cite: rand.cite,
+    })
+  }
 
 
   handleChange = selectedCompany => {
@@ -89,9 +96,9 @@ class LandingPage extends Component {
       if (!this.state.selectedCompany && !this.state.selectedStockData) {
         return (<>
           <div className="entryImg">
-
             <div className='centerDiv'>
-              <div>
+              <div className="blackBack"></div>
+              <div style={{ display: "flex" }}>
                 <Select
                   className='selector'
                   name="companyNameSelector"
@@ -104,7 +111,9 @@ class LandingPage extends Component {
                 />
               </div>
               <Cites author={this.state.author} cite={this.state.cite} />
+              <a className="cite" onClick={e => this.handleClick(e)}><i className="material-icons">autorenew</i>Losuj inny cytat</a>
             </div>
+
           </div>
         </>);
       } else {

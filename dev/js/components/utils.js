@@ -8,7 +8,8 @@ export const randomCite = function () {
         { author: "Warren Buffet", cites: ["Na giełdzie kapitał płynie od aktywnych do cierpliwych", "Wall Street to miejsce, gdzie ludzie przyjeżdżający limuzynami proszą o rady tych przyjeżdżających metrem",] },
         { author: "dr Alexander Elder", cites: ["Rynek potrafi być dłużej irracjonalny niż inwestor wypłacalny", "Trend is your friend"] },
         { author: "George Soros", cites: ["Bitcoin jest super", "Lubię oszukiwać ludzi na spekulacji"] },
-        { author: "Albert Rokicki", cites: ['Pierwszy dzień tygodnia wskazuje fałszywy kierunek tygodnia', 'Z inwestorskim pozdrowieniem'] }];
+        { author: "Albert Rokicki", cites: ['Pierwszy dzień tygodnia wskazuje fałszywy kierunek tygodnia', 'Z inwestorskim pozdrowieniem'] },
+        { author: "Miłosz Kuszczak", cites: ['Problemem większości inwestorów jest fakt iż używają określenia "grać na giełdzie" zamiast na niej "inwestować"'] }];
 
     const citesArray = cite.map(element => [element.author, element.cites]);
     const authorNo = getRandomIntInclusive(0, citesArray.length - 1);
