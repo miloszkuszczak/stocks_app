@@ -1,0 +1,93 @@
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: -1rem;
+   // margin: -1rem -0.5rem 0 -0.5rem; 
+   margin: 0 auto;
+}
+
+
+[class*="col-"] {
+   /*Mobile first: set the width to 100% by default*/
+   width: 100%;
+ }
+
+
+
+.container {
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+
+@media (min-width: $small) {
+  .container {
+     width: 100%;
+  }
+  .stick-header {
+     header {
+        h2 {
+           display: block;
+           text-align: left;
+           width:18%;
+     }
+  
+        h1 {
+        width: 28%;
+        text-align: center;
+        }
+        .selector {
+        width: 18%;
+        text-align:left;
+        }
+     }
+  }
+  
+  
+  @for $i from 1 through 12 {
+     .col-xs-#{$i} {
+         margin-top: 1rem;
+         padding: 0 0.5rem;
+         width: 100% * ($i / 12);
+       
+        }
+     }
+  }
+  
+  
+  @media (min-width: $medium) {
+  .container {
+     width: 100%;
+  }
+  .stick-header {
+     header {
+        h3 {
+           display: block;
+           text-align: left;
+           width:18%;
+     }
+  }
+}
+     @for $i from 1 through 12 {
+        .col-m-#{$i} {
+            margin-top: 1rem;
+            padding: 0 0.5rem;
+            width: 100% * ($i / 12);
+          
+           }
+        }
+     }
+  
+  @media (min-width: $large) {
+        .container {
+           width: $large;
+        }
+           @for $i from 1 through 12 {
+              .col-l-#{$i} {
+                  margin-top: 1rem;
+                  padding: 0 0.5rem;
+                  width: 100% * ($i / 12);
+                
+                 }
+              }
+  }
