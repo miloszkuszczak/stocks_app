@@ -58,16 +58,55 @@
   @media (min-width: $medium) {
   .container {
      width: 100%;
-  }
+     .info {
+      height: $min_height;
+      }
+   }
+
+   .centerDiv {
+      width: 400px;
+      border-radius: 5px;
+      padding: 10px;
+      height: 100px;
+      position: relative;
+      z-index: 2;
+      h1, h2, h3 {
+         color: white;
+         font-family: 'nunitolight', Arial, Helvetica, sans-serif;
+        padding: 0.5rem;
+     line-height: 1.5rem;
+     width: 100%;   
+     }
+     h2 {
+        width: 150%;
+        margin-top:1rem;
+     }
+      .selector {
+         width:100%;
+         z-index: 4;
+      }
+      .blackBack {
+         background-color: black;
+         opacity: 0.4;
+         z-index: -3;
+         position: absolute;
+         width: 50rem;
+         height: 15rem;
+         top: -2rem;
+         left: -2rem;
+  
+      }
+   }
+
   .stick-header {
      header {
         h3 {
            display: block;
            text-align: left;
            width:18%;
-     }
-  }
-}
+         }
+      }
+   }
      @for $i from 1 through 12 {
         .col-m-#{$i} {
             margin-top: 1rem;
@@ -81,7 +120,7 @@
   @media (min-width: $large) {
         .container {
            width: $large;
-        }
+         }
            @for $i from 1 through 12 {
               .col-l-#{$i} {
                   margin-top: 1rem;
