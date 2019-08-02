@@ -28,7 +28,7 @@ class FinFactor extends Component {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Kapitalizacja</td>
+                        <th>Kapitalizacja</th>
                         <td>{currCapital} PLN</td>
                         <td>{((currCapital - prevCapital) / prevCapital * 100).toFixed(2) + '%'}</td>
                     </tr>

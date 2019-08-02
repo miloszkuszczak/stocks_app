@@ -21,27 +21,27 @@ class Summary extends Component {
             <table>
                 <tbody>
                     <tr>
-                        <th>Stopa zwrotu od debiutu</th>
+                        <td>Stopa zwrotu od debiutu</td>
                         <td>{(valueDiff / this.props.priceIPO * 100).toFixed(2) + "%"}</td>
                     </tr>
                     <tr>
-                        <th>Licząc dywidendy</th>
+                        <td>Licząc dywidendy</td>
                         <td>{(withDividens * 100).toFixed(2) + '%'}</td>
                     </tr>
                     <tr>
-                        <th>Na giełdzie od:</th>
+                        <td>Na giełdzie od:</td>
                         <td>{(this.props.data.length - 1) * 12} miesięcy</td>
                     </tr>
                     <tr>
-                        <th>Emisje akcji</th>
+                        <td>Emisje akcji</td>
                         <td>{accNumEquit == 0 ? 'brak emisji' : accNumEquit > 0 && accNumEquit + 'szt.'}</td>
                     </tr>
                     <tr>
-                        <th>Skup akcji</th>
+                        <td>Skup akcji</td>
                         <td>{accNumEquit == 0 ? 'brak skupów' : accNumEquit < 0 && accNumEquit + 'szt.'}</td>
                     </tr>
                     <tr>
-                        <th>Liczba akcji</th>
+                        <td>Liczba akcji</td>
                         <td>{addSpace(toThousand(parseFloat(this.props.data[1].equites)))} tys. szt.</td>
                     </tr>
                 </tbody>
