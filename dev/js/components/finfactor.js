@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { addSpace, toThousand } from "./utils.js";
 
 class FinFactor extends Component {
     constructor() {
@@ -29,7 +29,7 @@ class FinFactor extends Component {
                 <tbody>
                     <tr>
                         <th>Kapitalizacja</th>
-                        <td>{currCapital} PLN</td>
+                        <td>{addSpace(toThousand(currCapital))} tys. PLN</td>
                         <td>{((currCapital - prevCapital) / prevCapital * 100).toFixed(2) + '%'}</td>
                     </tr>
                     <tr>
@@ -50,7 +50,7 @@ class FinFactor extends Component {
                     <tr>
                         <th>Liczba akcji</th>
                         <td>{this.props.actualYear.equites / 1000} tys. szt.</td>
-                        <td>{(this.props.actualYear.equites - this.props.previousYear.equites) / 1000}tys. szt.</td>
+                        <td>{(this.props.actualYear.equites - this.props.previousYear.equites) / 1000} tys. szt.</td>
                     </tr>
                 </tbody>
             </table>
