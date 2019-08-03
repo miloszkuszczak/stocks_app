@@ -13,7 +13,7 @@ module.exports = {
     contentBase: path.join(__dirname, `${entryPath}`),
     publicPath: "/build/",
     compress: true,
-    port: 3001
+    port: 8080
   },
   module: {
     rules: [
