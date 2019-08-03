@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Bar } from 'react-chartjs-2';
-
+import { toThousand } from './utils.js';
 
 class ProfitGraph extends Component {
     constructor(props) {
@@ -9,32 +9,32 @@ class ProfitGraph extends Component {
     render() {
         debugger;
         const rev_data = this.props.data.reverse();
-        const profits = rev_data.map(item => [parseFloat(item.operative_profit)]);
-        const incomes = rev_data.map(item => [parseFloat(item.incomes)]);
+        const profits = rev_data.map(item => toThousand([parseFloat(item.operative_profit)]));
+        const incomes = rev_data.map(item => toThousand([parseFloat(item.incomes)]));
         const labels = rev_data.map(item => [parseFloat(item.year)]);
 
         const data = {
             datasets: [{
-                label: 'Zysk operacyjny',
+                label: 'Przychody (tys. PLN)',
                 type: 'line',
                 data: incomes,
                 fill: false,
-                borderColor: '#EC932F',
-                backgroundColor: 'rgba(184,63,191,0.63)',
-                pointBorderColor: '#EC932F',
-                pointBackgroundColor: '#EC932F',
-                pointHoverBackgroundColor: '#EC932F',
-                pointHoverBorderColor: '#EC932F',
+                borderColor: 'rgba(165, 105, 189, 0.65)',
+                backgroundColor: 'rgba(165, 105, 189, 0.65)  ',
+                pointBorderColor: 'rgba(165, 105, 189, 0.65)',
+                pointBackgroundColor: '#D2B4DE',
+                pointHoverBackgroundColor: '#BB8FCE',
+                pointHoverBorderColor: '#BB8FCE',
                 yAxisID: 'y-axis-2'
             }, {
                 type: 'bar',
-                label: 'Przychody',
+                label: 'Zysk operacyjny (tys. PLN)',
                 data: profits,
                 fill: false,
-                backgroundColor: 'rgba(133,191,63,0.63)',
-                borderColor: '#0099FF',
-                hoverBackgroundColor: '#00CCFF',
-                hoverBorderColor: '#0099FF',
+                backgroundColor: 'rgba(133, 193, 233  ,0.65)',
+                borderColor: 'rgba(133, 193, 233  ,0.65)',
+                hoverBackgroundColor: 'rgba(93, 173, 226, 0.75)',
+                hoverBorderColor: 'rgba(93, 173, 226, 0.75)',
                 yAxisID: 'y-axis-1'
             }]
         };
@@ -67,7 +67,7 @@ class ProfitGraph extends Component {
                         position: 'left',
                         id: 'y-axis-1',
                         gridLines: {
-                            display: false
+                            display: true
                         },
                         labels: {
                             show: true
@@ -88,21 +88,9 @@ class ProfitGraph extends Component {
                 ]
             }
         };
-
-        // const plugins = [{
-        //     afterDraw: (chartInstance, easing) => {
-        //         const ctx = chartInstance.chart.ctx;
-        //         ctx.fillText("This text drawn by a plugin", 100, 100);
-        //     }
-        // }];
-
-        // export default React.createClass({
-        //     displayName: 'MixExample',
-
-        //     render() {
         return (<div>
             <h2>Przychody do zysku operacyjnego</h2>
-            <div style={{ width: '95%', height: '95%' }}>
+            <div style={{ width: '100%', height: '100%' }}>
                 <Bar
                     data={data}
                     options={options}

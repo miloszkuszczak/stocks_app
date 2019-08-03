@@ -1,6 +1,5 @@
 
 import React, { Component } from "react";
-import { capitalFirst } from './utils.js'
 
 
 
