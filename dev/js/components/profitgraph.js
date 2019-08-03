@@ -7,7 +7,6 @@ class ProfitGraph extends Component {
         super(props);
     }
     render() {
-        debugger;
         const rev_data = this.props.data.reverse();
         const profits = rev_data.map(item => toThousand([parseFloat(item.operative_profit)]));
         const incomes = rev_data.map(item => toThousand([parseFloat(item.incomes)]));

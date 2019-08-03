@@ -49,7 +49,7 @@ class FinFactor extends Component {
                     </tr>
                     <tr>
                         <th>Liczba akcji</th>
-                        <td>{this.props.actualYear.equites / 1000} tys. szt.</td>
+                        <td>{addSpace(toThousand(this.props.actualYear.equites))} tys. szt.</td>
                         <td>{(this.props.actualYear.equites - this.props.previousYear.equites) / 1000} tys. szt.</td>
                     </tr>
                 </tbody>
