@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "<img src=\"http://coderslab.pl/img/coderslab-logo.png\" align=\"right\" width=\"400\"/>",
   "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --hot -d",
-    "build": "webpack -p"
-  },
+  //"scripts": {
+   // "start": "webpack-dev-server --hot -d",
+    //"build": "webpack -p"
+  //},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miloszkuszczak/WRO_FER_W_09_REACT_React.git"
@@ -20,6 +20,13 @@
   "engines": {
     "npm": "6.10.1",
     "node": "12.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "postinstall": "react-scripts build"
   },
   "homepage": "https://github.com/miloszkuszczak/WRO_FER_W_09_REACT_React#readme",
   "devDependencies": {
@@ -37,6 +44,7 @@
     "gulp-sourcemaps": "^2.6.4"
   },
   "dependencies": {
+    "react-scripts": "^3.0.1",
     "accounting-js": "^1.1.1",
     "chart.js": "^2.8.0",
     "gulp": "^4.0.0",
