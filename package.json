@@ -40,6 +40,7 @@
     "gulp-sourcemaps": "^2.6.4"
   },
   "dependencies": {
+    "babel-loader": "^8.0.6",
     "react-scripts": "^3.0.1",
     "accounting-js": "^1.1.1",
     "chart.js": "^2.8.0",
