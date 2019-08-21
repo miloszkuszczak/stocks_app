@@ -4,4 +4,5 @@ App considering fundamental data and facts of stock for long term inwestors with
 To install clone this repo and put in directory:
 
 npm install
+
 npm start
