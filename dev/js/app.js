@@ -71,7 +71,6 @@ class LandingPage extends Component {
   }
   handleClick(e) {
     const rand = randomCite();
-    // let randomCite = rand;
     this.setState({
       author: rand.author,
       cite: rand.cite,
