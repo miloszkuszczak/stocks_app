@@ -10,6 +10,7 @@ import { About } from './about.js';
 import { Ceo } from './ceo.js';
 import { Summary } from './summary.js';
 import { ProfitGraph } from "./profitgraph.js";
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 
 const currYear = new Date().getFullYear();
 
@@ -41,22 +42,48 @@ class Main extends Component {
     }
 
     componentDidMount() {
-        debugger;
+        this.setElementsAnimation();
         let yearsToShow = this.GetYearsToShow(this.state.stockData.years);
         let selectedYear = yearsToShow[0];
         this.setState({ yearsToShow, selectedYear });
     }
 
+    setElementsAnimation() {
+        const elements = document.getElementsByClassName("element");
+        for (let el of elements) {
+            el.classList.add("animation");
+        }
+    }
+
+
+    refreshElementsAnimation() {
+        this.removeElementsAnimation();
+        setTimeout(
+            function () {
+                this.setElementsAnimation();
+            }
+                .bind(this),
+            1000
+        );
+    }
+
+    removeElementsAnimation() {
+        const elements = document.getElementsByClassName("element");
+        for (let el of elements) {
+            el.classList.remove("animation");
+        }
+    }
 
     handleClick(e) {
+        debugger;
         this.setState({
             selectedYear: e.target.value,
         })
+
     }
 
 
     render() {
-        debugger;
         const yearsToShow = this.GetYearsToShow(this.props.stockData[0].years);
         const actualYear = this.state.selectedYear;
         const actualYearData = this.props.stockData[0].years.filter((elem) => { return elem.year == actualYear });
@@ -78,8 +105,10 @@ class Main extends Component {
 
                         <div className="col-xs-12 col-m-6 col-l-3">
                             <div className="element info">
+                                {/* <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={1500} transitionLeaveTimeout={1300}> */}
                                 <h2>Działalność spółki</h2>
                                 <About about={this.props.stockData[0].about} />
+                                {/* </ReactCSSTransitionGroup> */}
                             </div>
                         </div>
 

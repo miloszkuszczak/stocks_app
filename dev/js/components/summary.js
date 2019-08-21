@@ -11,7 +11,6 @@ class Summary extends Component {
 
 
     render() {
-        debugger;
         const valueDiff = (this.props.data[1].price[11].value - this.props.priceIPO);
         const withDividens = (valueDiff + this.props.dividend) / this.props.priceIPO;
         const accNumEquit = parseFloat(this.props.data[1].equites) - parseFloat(this.props.data[this.props.data.length - 1].equites);

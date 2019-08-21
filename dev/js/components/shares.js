@@ -24,7 +24,14 @@ class Shares extends Component {
                     ]
                 }]
         }
-        return (<div><h2>Akcjonariat</h2><Doughnut height={200} options={{ maintainAspectRatio: true }} data={chartData} /></div>
+        return (<div>
+            <h2>Akcjonariat</h2>
+            <div style={{ width: '100%', height: '100%' }}>
+                <Doughnut height={200}
+                    options={{ maintainAspectRatio: true }}
+                    data={chartData} />
+            </div>
+        </div>
         )
     }
 }

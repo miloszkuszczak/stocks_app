@@ -36,14 +36,6 @@ class LineGraph extends Component {
             ]
         };
 
-        const styl = {
-            // display: flex,
-            // justifyContent: center,
-            // alignItem: center,
-            width: '95%',
-            height: '95',
-        }
-
 
         return (<>
             <Line data={data} width={90} options={{ legend: { display: false }, maintainAspectRatio: false }} />
